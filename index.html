@@ -70,9 +70,9 @@
 
                 <ul class="navbar-nav ml-auto nav-flex-icons">                    
                     <li  class="nav-item">
-                        <form class="form-inline ml-auto">
-                            <input type="text" class="form-control mr-sm-2" placeholder="Pesquisar">
-                        </form>
+                        <a class="nav-link " href="#" data-toggle="modal" data-target=".modal-search">
+                            <i class="fas fa-search"></i>
+                        </a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -266,6 +266,81 @@
                 </div>
             </div>
         </footer>
+
+        <!-- Modals -->
+        <div class="modal fade modal-search modal-full" tabindex="-1" role="dialog" aria-labelledby="modalSearch"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-6 text-center">
+                                <div class="col-12">
+                                    <h5 class="modal-title h4" id="modalSearch">Pesquisar</h5>
+                                </div>
+
+                                <br />
+
+                                <form class="form-inline ml-auto">
+                                    <div class="input-group mb-3 col-12">
+                                        <input type="text" class="form-control" placeholder="Digite o que deseja buscar"
+                                            aria-label="Digite o que deseja buscar" aria-describedby="button-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-primary" type="submit" id="button-addon2"><i
+                                                    class="fas fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+                                
+                                <br />
+                                
+                                <div>
+                                    <div class="col-12">
+                                        <p>Recomendados</p>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="btn btn-primary" href="#" role="button">Backend</a>
+                                        <a class="btn btn-primary" href="#" role="button">Java</a>
+                                        <a class="btn btn-primary" href="#" role="button">Node.js</a>
+                                    </div>
+                                </div>
+                                
+                                <br />
+                                
+                                <div>
+                                    <div class="col-12">
+                                        <p>Mais acessados</p>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="btn btn-primary" href="#" role="button">Java</a>
+                                        <a class="btn btn-primary" href="#" role="button">Vue.js</a>
+                                        <a class="btn btn-primary" href="#" role="button">Node.js</a>
+                                    </div>
+                                </div>
+                                
+                                <br />
+                                
+                                <div>
+                                    <div class="col-12">
+                                        <p>Histórico de acessos</p>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="btn btn-primary" href="#" role="button">Spring boot</a>
+                                        <a class="btn btn-primary" href="#" role="button">Java JDBC</a>
+                                        <a class="btn btn-primary" href="#" role="button">Frontend</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Bootstrap core JavaScript -->
         <script src="vendor/jquery/jquery.min.js"></script>
