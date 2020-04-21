@@ -78,10 +78,16 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <i class="fas fa-user"></i>
+                            <span class="authenticated d-none">Usuário</span>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+                        <div class="unauthenticated dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
                             <a class="dropdown-item" href="#" data-toggle="modal" data-target=".modal-login">Entrar</a>
                             <a class="dropdown-item" href="#" data-toggle="modal" data-target=".modal-register">Cadastre-se</a>
+                        </div>
+
+                        <div class="authenticated d-none dropdown-menu dropdown-menu-right dropdown-default"
+                            aria-labelledby="navbarDropdownMenuLink-333">
+                            <a class="dropdown-item" href="/?authenticated=false" title="Clique para sair">Sair</a>
                         </div>
                     </li>
                 </ul>
@@ -306,6 +312,7 @@
                                         <p>Recomendados</p>
                                     </div>
                                     <div class="col-12">
+                                        <!-- @TODO: add links -->
                                         <a class="btn btn-primary" href="#" role="button">Backend</a>
                                         <a class="btn btn-primary" href="#" role="button">Java</a>
                                         <a class="btn btn-primary" href="#" role="button">Node.js</a>
@@ -319,6 +326,7 @@
                                         <p>Mais acessados</p>
                                     </div>
                                     <div class="col-12">
+                                        <!-- @TODO: add links -->
                                         <a class="btn btn-primary" href="#" role="button">Java</a>
                                         <a class="btn btn-primary" href="#" role="button">Vue.js</a>
                                         <a class="btn btn-primary" href="#" role="button">Node.js</a>
@@ -332,6 +340,7 @@
                                         <p>Histórico de acessos</p>
                                     </div>
                                     <div class="col-12">
+                                        <!-- @TODO: add links -->
                                         <a class="btn btn-primary" href="#" role="button">Spring boot</a>
                                         <a class="btn btn-primary" href="#" role="button">Java JDBC</a>
                                         <a class="btn btn-primary" href="#" role="button">Frontend</a>
@@ -375,6 +384,7 @@
                                 <br />
         
                                 <form action="">
+                                    <input type="hidden" name="authenticated" value="true" />
                                     <div class="form-group">
                                         <label for="emailField">E-mail</label>
                                         <input type="email" class="form-control" id="emailField" aria-describedby="emailHelp"
@@ -424,6 +434,8 @@
                                 <br />
         
                                 <form action="">
+                                    <input type="hidden" name="authenticated" value="true" />
+
                                     <div class="form-group">
                                         <label for="emailField">E-mail</label>
                                         <input type="email" class="form-control" id="emailField" aria-describedby="emailHelp"
@@ -463,6 +475,7 @@
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="vendor/fontawesome/js/all.js"></script>
 
+        <script src="js/authentication.js"></script>
     </body>
 
 </html>
