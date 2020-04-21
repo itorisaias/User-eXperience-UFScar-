@@ -16,10 +16,11 @@
 
       <!-- Custom styles for this template -->
       <link href="css/ux.css" rel="stylesheet">
+      <link href="css/Sobre.css" rel="stylesheet">
 
     </head>
 
-    <body>
+    <body  class="d-flex flex-column min-vh-100">
 
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
             <a href="#" class="navbar-brand"><span lang="en">UX</span> - Diretivas para Web</a>
@@ -31,7 +32,7 @@
 
 
             <div class="collapse navbar-collapse" id="navbarCollapse">
-               <ul class="navbar-nav mr-auto">
+              <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html"><span lang="en">Home</span></a>
                     </li>
@@ -66,12 +67,12 @@
                             <a class="dropdown-item" href="MenuPostegre.html"><span lang="en">PostgreSQL</span></a>
                         </div>
                     </li>
-                </ul>              
+                </ul>               
 
                 <ul class="navbar-nav ml-auto nav-flex-icons">                    
                     <li  class="nav-item">
                         <form class="form-inline ml-auto">
-                            <input type="text" name="pesquisa" id="pesquisa" class="form-control mr-sm-2" placeholder="Pesquisar">
+                            <input type="text" class="form-control mr-sm-2" placeholder="Pesquisar">
                         </form>
                     </li>
 
@@ -92,12 +93,11 @@
         <div class="container">
 
             <!-- Page Heading/Breadcrumbs -->
-            <h1 class="mt-4 mb-3">Artigos Principais                
-            </h1>
+            <h1 class="mt-4 mb-3">Sobre Nós</h1>
 
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"></li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html"><span lang="en">Home</span></a> / <span lang="en">Sobre nós</span>
                 </li>                
             </ol>
 
@@ -106,75 +106,83 @@
             <div class="card mb-4">
                 <div class="card-body">
                     <div class="row">
-                        
-                        <div class="col-lg-6">
-                            <a href="#"> <img class="img-fluid rounded" src="images/SpringBoot.png" alt=""></a>
+                        <div class="col-lg-12">
+                            <div class="text-center">
+                                <h2>De desenvolvedores, para desenvolvedores.</h2>
+                                <br />
+                            </div>
                         </div>
-
                         <div class="col-lg-6">
-                            <h2 class="card-title">O que é Spring Boot?</h2>
-                            <p class="card-text">Muitas pessoas morrem de medo de terem que configurar uma aplicação do zero. Geralmente, são necessárias várias configurações para só então começar a codificar.
-
-                                Agora, imagine pular toda essa parte chata de configurações e criar um projeto onde você já tenha tudo o que precisa para começar uma aplicação. Muito bom, não é mesmo?</p>
-                            <a href="#" class="btn btn-primary">Continuar Leitura &rarr;</a>
+                            <img class="img-fluid rounded mb-4" src="http://placehold.it/750x450" alt="">
                         </div>
-
+                        <div class="col-lg-6">
+                            <div class="card-text text-left">
+                                <h4>Quem somos?</h4>
+                                <p class="text-left">
+                                    Somos um grupo de amigos, estudantes da área de tecnologia, e apaixonados
+                                    por desenvolvimento de software.
+                                    Buscamos, através da internet, disseminar o conhecimento e divulgar
+                                    boas práticas de desenvolvimento, do BackEnd ao FrontEnd.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card-text text-right">
+                                <h4>O que fazemos?</h4>
+                                <p class="text-right">
+                                    Através dos artigos publicados em nosso site, buscamos aproximar
+                                    desenvolvedores das mais diversas áreas e níveis de conhecimento,
+                                    disseminando o conhecimento e divulgando boas práticas de desenvolvimento,
+                                    do BackEnd ao FrontEnd.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <img class="img-fluid rounded mb-4" src="http://placehold.it/750x450" alt="">
+                        </div>
+                        <div class="col-lg-6">
+                            <img class="img-fluid rounded mb-4" src="http://placehold.it/750x450" alt="">
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="card-text text-left">
+                                <h4>Qualidade em vez de quantidade</h4>
+                                <p class="text-left">
+                                    Os artigos publicados seguem guidelines pré definidas para garantir
+                                    a qualidade e facilitar a compreensão do conteúdo.
+                                </p>
+                            </div>
+                        </div>
+<!--                        <div class="card-text text-left">-->
+<!--                            <h4>Quem somos?</h4>-->
+<!--                            <p class="text-left">-->
+<!--                                Somos um grupo de amigos, estudantes da área de tecnologia, e apaixonados-->
+<!--                                por desenvolvimento de software.-->
+<!--                                Buscamos, através da internet, disseminar o conhecimento e divulgar-->
+<!--                                boas práticas de desenvolvimento, do BackEnd ao FrontEnd.-->
+<!--                            </p>-->
+<!--                        </div>-->
+<!--                        <div class="card-text text-right">-->
+<!--                            <h4>O que fazemos?</h4>-->
+<!--                            <p class="text-right">-->
+<!--                                Através dos artigos publicados em nosso site, buscamos aproximar-->
+<!--                                desenvolvedores das mais diversas áreas e níveis de conhecimento,-->
+<!--                                disseminando o conhecimento e divulgando boas práticas de desenvolvimento,-->
+<!--                                do BackEnd ao FrontEnd.-->
+<!--                            </p>-->
+<!--                        </div>-->
+<!--                        <div class="card-text text-left">-->
+<!--                            <h4>Qualidade em vez de quantidade</h4>-->
+<!--                            <p class="text-left">-->
+<!--                                Os artigos publicados seguem guidelines pré definidas para garantir-->
+<!--                                a qualidade e facilitar a compreensão do conteúdo.-->
+<!--                            </p>-->
+<!--                        </div>-->
                     </div>
                 </div>                
-                <div class="card-footer text-muted">                  
-                    Escrito em 02/02/2020 por <a href="#">Alexandre Afonso</a>
-                </div>
+               
             </div>
 
-
-            <div class="card mb-4">
-                <div class="card-body">
-                    <div class="row">
-                        
-
-                        <div class="col-lg-6">
-                            <h2 class="card-title">Como construir uma aplicação com Docker?</h2>
-                            <p class="card-text">Podemos dizer que as palavras chaves para o Docker são: construir, entregar e rodar em qualquer ambiente (develop, ship and run anywhere).
-                                Nada mais que uma plataforma aberta para criação, execução e publicação (deploy) de containers. Um Container é a forma de empacotar sua aplicação e suas dependências (bibliotecas) de forma padronizada. 
-
-                            </p>
-                            <a href="#" class="btn btn-primary">Continuar Leitura &rarr;</a>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <a href="#"> <img class="img-fluid rounded" src="images/docker.png" alt=""></a>                            
-                        </div>
-                    </div>
-                </div>                
-                <div class="card-footer text-muted">
-                    Escrito em 19/02/2020 por <a href="#">Caio Ortega</a>
-                    
-                </div>
-            </div>
-
-            <div class="card mb-4">
-                <div class="card-body">
-                    <div class="row">
-                        
-                        <div class="col-lg-6">
-                            <a href="#"> <img class="img-fluid rounded" src="images/bootstrap.png" alt=""></a>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <h2 class="card-title">React-Bootstrap: a fusão entre o React e o Bootstrap</h2>
-                            <p class="card-text">Se você já trabalha com desenvolvimento web há alguns anos, provavelmente se aproveitou bastante da era Bootstrap. O framework web mais famoso do mundo trouxe várias facilidades para os programadores e continua sendo relevante até hoje (confira o nosso e-book sobre o tema). Entretanto, nos últimos anos novas tecnologias apareceram e mudaram ainda mais a forma como escrevemos nossas aplicações. Uma destas tecnologias é o React, fruto do time de engenharia do Facebook.</p>
-                            <a href="#" class="btn btn-primary">Continuar Leitura &rarr;</a>
-                        </div>
-
-                    </div>
-                </div>                
-                <div class="card-footer text-muted">
-                    Escrito em 19/02/2020 por <a href="#">Alex Diniz</a>
-                </div>
-            </div>
-
-            
-
+           
             <!-- Pagination -->
             <!--
             <ul class="pagination justify-content-center mb-4">
@@ -189,7 +197,7 @@
 
         </div>
 
-
+         <div class="wrapper flex-grow-1"></div>
         <footer class="page-footer font-small text-light pt-4 bg-dark">
             <div class="container text-center text-md-left">
                 <div class="row text-center text-md-left mt-3 pb-3">
@@ -272,7 +280,6 @@
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="vendor/fontawesome/js/all.js"></script>
-        <script src="js/ux.js"></script>
 
     </body>
 
