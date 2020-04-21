@@ -91,101 +91,71 @@
         <!-- Page Content -->
         <div class="container">
 
-            <!-- Page Heading/Breadcrumbs -->
-            <h1 class="mt-4 mb-3">Artigos Principais                
-            </h1>
+        <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">
+          
+    </h1>
 
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"></li>
-                    <a href="index.html">Home</a>
-                </li>                
-            </ol>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Novo Artigo</li>
+      </ol>
 
-            <!-- Blog Post -->
-
-            <div class="card mb-4">
-                <div class="card-body">
-                    <div class="row">
-                        
-                        <div class="col-lg-6">
-                            <a href="#"> <img class="img-fluid rounded" src="images/SpringBoot.png" alt=""></a>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <h2 class="card-title">O que é Spring Boot?</h2>
-                            <p class="card-text">Muitas pessoas morrem de medo de terem que configurar uma aplicação do zero. Geralmente, são necessárias várias configurações para só então começar a codificar.
-
-                                Agora, imagine pular toda essa parte chata de configurações e criar um projeto onde você já tenha tudo o que precisa para começar uma aplicação. Muito bom, não é mesmo?</p>
-                            <a href="ArtigoJava.html" class="btn btn-primary">Continuar Leitura &rarr;</a>
-                        </div>
-
-                    </div>
-                </div>                
-                <div class="card-footer text-muted">                  
-                    Escrito em 02/02/2020 por <a href="#">Alexandre Afonso</a>
-                </div>
-            </div>
-
-
-            <div class="card mb-4">
-                <div class="card-body">
-                    <div class="row">
-                        
-
-                        <div class="col-lg-6">
-                            <h2 class="card-title">Como construir uma aplicação com Docker?</h2>
-                            <p class="card-text">Podemos dizer que as palavras chaves para o Docker são: construir, entregar e rodar em qualquer ambiente (develop, ship and run anywhere).
-                                Nada mais que uma plataforma aberta para criação, execução e publicação (deploy) de containers. Um Container é a forma de empacotar sua aplicação e suas dependências (bibliotecas) de forma padronizada. 
-
-                            </p>
-                            <a href="ArtigoDevOps.html" class="btn btn-primary">Continuar Leitura &rarr;</a>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <a href="ArtigoDevOps.html"> <img class="img-fluid rounded" src="images/docker.png" alt=""></a>                            
-                        </div>
-                    </div>
-                </div>                
-                <div class="card-footer text-muted">
-                    Escrito em 19/02/2020 por <a href="#">Caio Ortega</a>
-                    
-                </div>
-            </div>
-
-            <div class="card mb-4">
-                <div class="card-body">
-                    <div class="row">
-                        
-                        <div class="col-lg-6">
-                            <a href="ArtigoReact.html"> <img class="img-fluid rounded" src="images/bootstrap.png" alt=""></a>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <h2 class="card-title">React-Bootstrap: a fusão entre o React e o Bootstrap</h2>
-                            <p class="card-text">Se você já trabalha com desenvolvimento web há alguns anos, provavelmente se aproveitou bastante da era Bootstrap. O framework web mais famoso do mundo trouxe várias facilidades para os programadores e continua sendo relevante até hoje (confira o nosso e-book sobre o tema). Entretanto, nos últimos anos novas tecnologias apareceram e mudaram ainda mais a forma como escrevemos nossas aplicações. Uma destas tecnologias é o React, fruto do time de engenharia do Facebook.</p>
-                            <a href="ArtigoReact.html" class="btn btn-primary">Continuar Leitura &rarr;</a>
-                        </div>
-
-                    </div>
-                </div>                
-                <div class="card-footer text-muted">
-                    Escrito em 19/02/2020 por <a href="#">Alex Diniz</a>
-                </div>
-            </div>
-
+      <div class="row">
+        
             
-
-            <!-- Pagination -->
-            <!--
-            <ul class="pagination justify-content-center mb-4">
-            <li class="page-item">
-            <a class="page-link" href="#">&larr; Older</a>
-            </li>
-            <li class="page-item disabled">
-            <a class="page-link" href="#">Newer &rarr;</a>
-            </li>
-            </ul>
-            -->
+            
+           
+          </div>
+          <!-- /.row -->
+      
+          <!-- Contact Form -->
+          <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+          <div class="row">
+            <div class="col-lg-8 mb-4">
+              <h3>Escreva o seu artigo que nós cuidamos do resto!</h3>
+              <form name="sentMessage" id="contactForm" novalidate>
+                <div class="control-group form-group">
+                  <div class="controls">
+                    <label>Título:</label>
+                    <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                    <p class="help-block"></p>
+                  </div>
+                </div>
+                <div class="input-group mb-3">
+                   
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="inputGroupFile01">
+                      <label class="custom-file-label" for="inputGroupFile01">Escolha uma imagem Legal, ela vai ser a capa do seu artigo!</label>
+                    </div>
+                  </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect2">Categoria</label>
+                    <select multiple class="form-control" id="exampleFormControlSelect2">
+                      <option>Backend</option>
+                      <option>Frontend</option>
+                      <option>DevOps</option>
+                      <option>Banco de Dados</option>
+                      <option>Outro</option>
+                    </select>
+                  </div>                
+                
+                <div class="control-group form-group">
+                  <div class="controls">
+                    <label>Conteúdo:</label>
+                    <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                  </div>
+                </div>
+                <div id="success"></div>
+                <!-- For success/fail messages -->
+                <button type="submit" class="btn btn-primary" id="sendMessageButton">Submeter Artigo</button>
+              </form>
+            </div>
+  
+      </div>
+      <!-- /.row -->       
 
         </div>
 

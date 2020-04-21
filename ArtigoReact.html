@@ -91,101 +91,143 @@
         <!-- Page Content -->
         <div class="container">
 
-            <!-- Page Heading/Breadcrumbs -->
-            <h1 class="mt-4 mb-3">Artigos Principais                
-            </h1>
+        <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">
+        <small> React-Bootstrap: a fusão entre o React e o Bootstrap
+          
+        </small>    
+    </h1>
 
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"></li>
-                    <a href="index.html">Home</a>
-                </li>                
-            </ol>
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="breadcrumb-item active">FrontEnd</li>
+      </ol>
 
-            <!-- Blog Post -->
+      <div class="row">
 
-            <div class="card mb-4">
-                <div class="card-body">
-                    <div class="row">
-                        
-                        <div class="col-lg-6">
-                            <a href="#"> <img class="img-fluid rounded" src="images/SpringBoot.png" alt=""></a>
-                        </div>
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+  
+          <!-- Preview Image -->
+          <img class="img-fluid rounded" src="images/bootstrap.png" alt="">
+  
+          <hr>
+  
+          <!-- Date/Time -->                 
+          <p>Escrito por Alex Diniz em 19/02/2020 </p>
+  
+          <hr>
+  
+          <!-- Post Content -->
+          <p class="lead">O React-Bootsrap é uma biblioteca que nos oferece os componentes clássicos do Bootstrap construídos em React. O projeto se encontra na versão 0.32.1, é de código aberto e está disponível no GitHub; sendo que já possui mais de 13 mil estrelas e 2 mil forks — tudo sob licença MIT.
+            O projeto conta com muitos contribuidores e busca alcançar a versão 1.0 em um futuro muito próximo. Além disso, é importante destacar que até o momento eles ainda trabalham com o Bootstrap 3, mas estão caminhando em direção ao Bootstrap 4.</p>
+         
+         <p class="lead"> Para que toda a mágica funcione de forma adequada, precisaremos de duas dependências bem óbvias no projeto: o React e o React-Bootstrap (lembrando que: para o React, precisamos do ReactDOM também).</p>
+  
 
-                        <div class="col-lg-6">
-                            <h2 class="card-title">O que é Spring Boot?</h2>
-                            <p class="card-text">Muitas pessoas morrem de medo de terem que configurar uma aplicação do zero. Geralmente, são necessárias várias configurações para só então começar a codificar.
-
-                                Agora, imagine pular toda essa parte chata de configurações e criar um projeto onde você já tenha tudo o que precisa para começar uma aplicação. Muito bom, não é mesmo?</p>
-                            <a href="ArtigoJava.html" class="btn btn-primary">Continuar Leitura &rarr;</a>
-                        </div>
-
-                    </div>
-                </div>                
-                <div class="card-footer text-muted">                  
-                    Escrito em 02/02/2020 por <a href="#">Alexandre Afonso</a>
+          
+          <hr>
+  
+          <!-- Comments Form -->
+          <div class="card my-4">
+            <h5 class="card-header">Deixe um comentario:</h5>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <textarea class="form-control" rows="3"></textarea>
                 </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
             </div>
-
-
-            <div class="card mb-4">
-                <div class="card-body">
-                    <div class="row">
-                        
-
-                        <div class="col-lg-6">
-                            <h2 class="card-title">Como construir uma aplicação com Docker?</h2>
-                            <p class="card-text">Podemos dizer que as palavras chaves para o Docker são: construir, entregar e rodar em qualquer ambiente (develop, ship and run anywhere).
-                                Nada mais que uma plataforma aberta para criação, execução e publicação (deploy) de containers. Um Container é a forma de empacotar sua aplicação e suas dependências (bibliotecas) de forma padronizada. 
-
-                            </p>
-                            <a href="ArtigoDevOps.html" class="btn btn-primary">Continuar Leitura &rarr;</a>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <a href="ArtigoDevOps.html"> <img class="img-fluid rounded" src="images/docker.png" alt=""></a>                            
-                        </div>
-                    </div>
-                </div>                
-                <div class="card-footer text-muted">
-                    Escrito em 19/02/2020 por <a href="#">Caio Ortega</a>
-                    
+          </div>
+  
+          <!-- Single Comment -->
+          <div class="media mb-4">
+            <img class="d-flex mr-3 rounded-circle" src="images/user4.png" alt="">
+            <div class="media-body">
+              <h5 class="mt-0">Pedro Hirtona</h5>
+              Parabéns
+              pela objetividade do artigo e organização do mesmo!Obrigado!
+            </div>
+          </div>
+  
+          <!-- Comment with nested comments -->
+          <div class="media mb-4">
+            <img class="d-flex mr-3 rounded-circle" src="images/user2.png" alt="">
+            <div class="media-body">
+              <h5 class="mt-0">Paulo Guedes</h5>
+             Belo conteúdo, tem como fazer um artigo para a proxima vesão do Bootstrap?
+              <div class="media mt-4">
+                <img class="d-flex mr-3 rounded-circle" src="images/user3.png" alt="">
+                <div class="media-body">
+                  <h5 class="mt-0">Alex Diniz</h5>
+                  Olá Paulo!
+                  Bacana esse tema pra um conteúdo. Anoitei o tema aqui para podermos considerar nos próximos conteúdos que planejarmos criar.
+                  Abraço.
+                  </div>
+              </div>    
+  
+            </div>
+          </div>
+  
+        </div>
+  
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+  
+          
+          <!-- Categories Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Categorias</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#">Backend</a>
+                    </li>
+                    <li>
+                      <a href="#">FrontEnd</a>
+                    </li>
+                    <li>
+                      <a href="#">DevOps</a>
+                    </li>
+                  </ul>
                 </div>
-            </div>
-
-            <div class="card mb-4">
-                <div class="card-body">
-                    <div class="row">
-                        
-                        <div class="col-lg-6">
-                            <a href="ArtigoReact.html"> <img class="img-fluid rounded" src="images/bootstrap.png" alt=""></a>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <h2 class="card-title">React-Bootstrap: a fusão entre o React e o Bootstrap</h2>
-                            <p class="card-text">Se você já trabalha com desenvolvimento web há alguns anos, provavelmente se aproveitou bastante da era Bootstrap. O framework web mais famoso do mundo trouxe várias facilidades para os programadores e continua sendo relevante até hoje (confira o nosso e-book sobre o tema). Entretanto, nos últimos anos novas tecnologias apareceram e mudaram ainda mais a forma como escrevemos nossas aplicações. Uma destas tecnologias é o React, fruto do time de engenharia do Facebook.</p>
-                            <a href="ArtigoReact.html" class="btn btn-primary">Continuar Leitura &rarr;</a>
-                        </div>
-
-                    </div>
-                </div>                
-                <div class="card-footer text-muted">
-                    Escrito em 19/02/2020 por <a href="#">Alex Diniz</a>
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#">JavaScript</a>
+                    </li>
+                    <li>
+                      <a href="#">CSS</a>
+                    </li>
+                    <li>
+                      <a href="#">Tutoriais</a>
+                    </li>
+                  </ul>
                 </div>
+              </div>
             </div>
-
+          </div>
+  
+          <!-- Side Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Dicas do Autor</h5>
+            <div class="card-body">
+                Bem bacana, né? A lógica para utilizar os outros componentes é exatamente a mesma. Basta seguir a documentação para ver quais os tipos de configuração cada um deles aceita.</div>
+          </div>
+  
+        </div>
+  
+      </div>
+      <!-- /.row -->
+            
             
 
-            <!-- Pagination -->
-            <!--
-            <ul class="pagination justify-content-center mb-4">
-            <li class="page-item">
-            <a class="page-link" href="#">&larr; Older</a>
-            </li>
-            <li class="page-item disabled">
-            <a class="page-link" href="#">Newer &rarr;</a>
-            </li>
-            </ul>
-            -->
+        
 
         </div>
 
