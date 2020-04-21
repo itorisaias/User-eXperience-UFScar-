@@ -19,7 +19,7 @@
 
     </head>
 
-    <body>
+    <body  class="d-flex flex-column min-vh-100">
 
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
             <a href="#" class="navbar-brand"><span lang="en">UX</span> - Diretivas para Web</a>
@@ -71,7 +71,7 @@
                 <ul class="navbar-nav ml-auto nav-flex-icons">                    
                     <li  class="nav-item">
                         <form class="form-inline ml-auto">
-                            <input type="text" name="pesquisa" id="pesquisa" class="form-control mr-sm-2" placeholder="Pesquisar">
+                            <input type="text" class="form-control mr-sm-2" placeholder="Pesquisar">
                         </form>
                     </li>
 
@@ -92,12 +92,12 @@
         <div class="container">
 
             <!-- Page Heading/Breadcrumbs -->
-            <h1 class="mt-4 mb-3">Artigos Principais                
+            <h1 class="mt-4 mb-3">Artigos de <span lang="en">Docker</span>                
             </h1>
 
             <ol class="breadcrumb">
                 <li class="breadcrumb-item"></li>
-                    <a href="index.html">Home</a>
+                    <a href="index.html"><span lang="en">Home</span></a> / <a href="#"><span lang="en">DevOps</span></a> / <a href="MenuDocker.html"><span lang="en">Docker</span></a>
                 </li>                
             </ol>
 
@@ -108,42 +108,18 @@
                     <div class="row">
                         
                         <div class="col-lg-6">
-                            <a href="#"> <img class="img-fluid rounded" src="images/SpringBoot.png" alt=""></a>
+                            <a href="#"> <img class="img-fluid rounded" src="images/docker.png" alt=""></a>                            
                         </div>
 
                         <div class="col-lg-6">
-                            <h2 class="card-title">O que é Spring Boot?</h2>
-                            <p class="card-text">Muitas pessoas morrem de medo de terem que configurar uma aplicação do zero. Geralmente, são necessárias várias configurações para só então começar a codificar.
-
-                                Agora, imagine pular toda essa parte chata de configurações e criar um projeto onde você já tenha tudo o que precisa para começar uma aplicação. Muito bom, não é mesmo?</p>
-                            <a href="#" class="btn btn-primary">Continuar Leitura &rarr;</a>
-                        </div>
-
-                    </div>
-                </div>                
-                <div class="card-footer text-muted">                  
-                    Escrito em 02/02/2020 por <a href="#">Alexandre Afonso</a>
-                </div>
-            </div>
-
-
-            <div class="card mb-4">
-                <div class="card-body">
-                    <div class="row">
-                        
-
-                        <div class="col-lg-6">
-                            <h2 class="card-title">Como construir uma aplicação com Docker?</h2>
-                            <p class="card-text">Podemos dizer que as palavras chaves para o Docker são: construir, entregar e rodar em qualquer ambiente (develop, ship and run anywhere).
-                                Nada mais que uma plataforma aberta para criação, execução e publicação (deploy) de containers. Um Container é a forma de empacotar sua aplicação e suas dependências (bibliotecas) de forma padronizada. 
+                            <h2 class="card-title">Como construir uma aplicação com <span lang="en">Docker</span>?</h2>
+                            <p class="card-text">Podemos dizer que as palavras chaves para o <span lang="en">Docker</span> são: construir, entregar e rodar em qualquer ambiente (<span lang="en">develop, ship and run anywhere</span>).
+                                Nada mais que uma plataforma aberta para criação, execução e publicação (<span lang="en">deploy</span>) de <span lang="en">containers</span>. Um <span lang="en">Container</span> é a forma de empacotar sua aplicação e suas dependências (bibliotecas) de forma padronizada. 
 
                             </p>
                             <a href="#" class="btn btn-primary">Continuar Leitura &rarr;</a>
                         </div>
 
-                        <div class="col-lg-6">
-                            <a href="#"> <img class="img-fluid rounded" src="images/docker.png" alt=""></a>                            
-                        </div>
                     </div>
                 </div>                
                 <div class="card-footer text-muted">
@@ -152,29 +128,7 @@
                 </div>
             </div>
 
-            <div class="card mb-4">
-                <div class="card-body">
-                    <div class="row">
-                        
-                        <div class="col-lg-6">
-                            <a href="#"> <img class="img-fluid rounded" src="images/bootstrap.png" alt=""></a>
-                        </div>
-
-                        <div class="col-lg-6">
-                            <h2 class="card-title">React-Bootstrap: a fusão entre o React e o Bootstrap</h2>
-                            <p class="card-text">Se você já trabalha com desenvolvimento web há alguns anos, provavelmente se aproveitou bastante da era Bootstrap. O framework web mais famoso do mundo trouxe várias facilidades para os programadores e continua sendo relevante até hoje (confira o nosso e-book sobre o tema). Entretanto, nos últimos anos novas tecnologias apareceram e mudaram ainda mais a forma como escrevemos nossas aplicações. Uma destas tecnologias é o React, fruto do time de engenharia do Facebook.</p>
-                            <a href="#" class="btn btn-primary">Continuar Leitura &rarr;</a>
-                        </div>
-
-                    </div>
-                </div>                
-                <div class="card-footer text-muted">
-                    Escrito em 19/02/2020 por <a href="#">Alex Diniz</a>
-                </div>
-            </div>
-
-            
-
+           
             <!-- Pagination -->
             <!--
             <ul class="pagination justify-content-center mb-4">
@@ -189,7 +143,7 @@
 
         </div>
 
-
+        <div class="wrapper flex-grow-1"></div>
         <footer class="page-footer font-small text-light pt-4 bg-dark">
             <div class="container text-center text-md-left">
                 <div class="row text-center text-md-left mt-3 pb-3">
@@ -271,7 +225,6 @@
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="vendor/fontawesome/js/all.js"></script>
-        <script src="js/ux.js"></script>
 
     </body>
 
