@@ -5,7 +5,11 @@
   const authenticatedElements = $(".authenticated");
 
   $(document).ready(() => {
-    toggleAuthenticationStatus();
+    init();
+  });
+
+  function init() {
+    setUserAuthenticationStatus();
 
     isAuthenticated()
       .then(() => {
@@ -19,7 +23,7 @@
 
         authenticatedElements.remove();
       });
-  });
+  }
 
   function getQueryParam(param) {
     var rx = new RegExp("[?&]" + param + "=([^&]+).*$");
@@ -29,7 +33,7 @@
       : decodeURIComponent(returnVal[1].replace(/\+/g, " "));
   }
 
-  function toggleAuthenticationStatus() {
+  function setUserAuthenticationStatus() {
     const authenticated = getQueryParam("authenticated");
 
     if (authenticated === "true") {
