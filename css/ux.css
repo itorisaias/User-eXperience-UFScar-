@@ -1,4 +1,3 @@
-
 body {
   padding-top: 56px;
 }
@@ -10,3 +9,37 @@ body {
   -webkit-line-clamp: 2; /* number of lines to show */
   -webkit-box-orient: vertical;
 }
+
+/* Navbar */
+.navbar-brand {
+  font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+}
+
+/* Modal styles */
+.modal-full .modal-dialog {
+  max-width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+.modal-full .modal-header {
+  border-bottom: 0;
+}
+
+.modal-full .modal-content {
+  height: 100%;
+  border: 0;
+  border-radius: 0;
+  overflow: auto;
+}
+
+.modal-full .close {
+  font-size: 2rem;
+}
+
