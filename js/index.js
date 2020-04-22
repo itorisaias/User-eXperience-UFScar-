@@ -3,12 +3,8 @@
 
   $(document).ready(() => {
     loadComponent();
-    init();
-  });
-
-  function init() {
     setUserAuthenticationStatus();
-  }
+  });
 
   function getQueryParam(param) {
     var rx = new RegExp("[?&]" + param + "=([^&]+).*$");
@@ -27,8 +23,10 @@
       };
 
       localStorage.setItem("user", JSON.stringify(user));
+      location.href = "/MeusArtigos.html";
     } else if (authenticated === "false") {
       localStorage.removeItem("user");
+      location.href = "/index.html";
     }
   }
 
@@ -42,6 +40,26 @@
       }
     });
   }
+
+  const onFileReady = {
+    "components/nav-bar.html": () => {
+      const unauthenticatedElements = $(".unauthenticated");
+      const authenticatedElements = $(".authenticated");
+
+      isAuthenticated()
+        .then(() => {
+          console.log("Usuário está autenticado.");
+
+          authenticatedElements.removeClass("d-none");
+          unauthenticatedElements.remove();
+        })
+        .catch(() => {
+          console.log("Usuário não está autenticado.");
+
+          authenticatedElements.remove();
+        });
+    },
+  };
 
   function loadComponent() {
     const elements = document.getElementsByTagName("*");
@@ -72,7 +90,7 @@
 
       if (file) {
         const xhttp = new XMLHttpRequest();
-        xhttp.onreadystatechange = function () {
+        xhttp.onreadystatechange = function() {
           if (this.readyState == 4) {
             if (this.status == 200) {
               element.innerHTML = this.responseText;
@@ -81,9 +99,11 @@
                 onFileReady[file]();
               }
             }
+
             if (this.status == 404) {
               element.innerHTML = "Page not found.";
             }
+
             element.removeAttribute("component");
             loadComponent();
           }
