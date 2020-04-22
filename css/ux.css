@@ -2,6 +2,14 @@ body {
   padding-top: 56px;
 }
 
+.preview-description-article {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* number of lines to show */
+  -webkit-box-orient: vertical;
+}
+
 /* Navbar */
 .navbar-brand {
   font-size: 1rem;
@@ -34,3 +42,4 @@ body {
 .modal-full .close {
   font-size: 2rem;
 }
+
