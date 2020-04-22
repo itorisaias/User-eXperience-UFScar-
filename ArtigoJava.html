@@ -1,561 +1,401 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="" />
-    <meta name="author" content="" />
 
-    <title>UX - Diretivas para Web</title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
 
-    <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
-    <link href="vendor/fontawesome/css/all.css" rel="stylesheet" />
+  <title>UX - Diretivas para Web</title>
 
-    <!-- Custom styles for this template -->
-    <link href="css/ux.css" rel="stylesheet" />
-  </head>
+  <!-- Bootstrap core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="vendor/fontawesome/css/all.css" rel="stylesheet" />
 
-  <body>
-    <div component="components/nav-bar.html"></div>
+  <!-- Custom styles for this template -->
+  <link href="css/ux.css" rel="stylesheet" />
+</head>
 
-    <!-- Page Content -->
-    <div class="container">
-      <!-- Page Heading/Breadcrumbs -->
-      <h1 class="mt-4 mb-3">
-        <small> O que é Spring Boot? </small>
-      </h1>
+<body>
+  <div component="components/nav-bar.html"></div>
 
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="index.html">Home</a>
-        </li>
-        <li class="breadcrumb-item active">Backend</li>
-      </ol>
+  <!-- Page Content -->
+  <div class="container">
+    <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">
+      <small> O que é Spring Boot? </small>
+    </h1>
 
-      <div class="row">
-        <!-- Post Content Column -->
-        <div class="col-lg-8">
-          <!-- Preview Image -->
-          <img class="img-fluid rounded" src="images/SpringBoot.png" alt="" />
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="index.html">Home</a>
+      </li>
+      <li class="breadcrumb-item active">Backend</li>
+    </ol>
 
-          <hr />
+    <div class="row">
+      <!-- Post Content Column -->
+      <div class="col-lg-8">
+        <!-- Preview Image -->
+        <img class="img-fluid rounded" src="images/SpringBoot.png" alt="" />
 
-          <!-- Date/Time -->
-          <p>Escrito por Marcelo Afonso em 02/02/2020</p>
+        <hr />
 
-          <hr />
+        <!-- Date/Time -->
+        <p>Escrito por Marcelo Afonso em 02/02/2020</p>
 
-          <!-- Post Content -->
-          <p class="lead">
-            O Spring Boot é um projeto da Spring que veio para facilitar o
-            processo de configuração e publicação de nossas aplicações. A
-            intenção é ter o seu projeto rodando o mais rápido possível e sem
-            complicação. Ele consegue isso favorecendo a convenção sobre a
-            configuração. Basta que você diga pra ele quais módulos deseja
-            utilizar (WEB, Template, Persistência, Segurança, etc.) que ele vai
-            reconhecer e configurar. Você escolhe os módulos que deseja através
-            dos starters que inclui no pom.xml do seu projeto.
-          </p>
+        <hr />
 
-          <p class="lead">
-            Eles, basicamente, são dependências que agrupam outras dependências.
-            Inclusive, como temos esse grupo de dependências representadas pelo
-            starter, nosso pom.xml acaba por ficar mais organizado. Apesar do
-            Spring Boot, através da convenção, já deixar tudo configurado, nada
-            impede que você crie as suas customizações caso sejam necessárias. O
-            maior benefício do Spring Boot é que ele nos deixa mais livres para
-            pensarmos nas regras de negócio da nossa aplicação.
-          </p>
+        <!-- Post Content -->
+        <p class="lead">
+          O Spring Boot é um projeto da Spring que veio para facilitar o
+          processo de configuração e publicação de nossas aplicações. A
+          intenção é ter o seu projeto rodando o mais rápido possível e sem
+          complicação. Ele consegue isso favorecendo a convenção sobre a
+          configuração. Basta que você diga pra ele quais módulos deseja
+          utilizar (WEB, Template, Persistência, Segurança, etc.) que ele vai
+          reconhecer e configurar. Você escolhe os módulos que deseja através
+          dos starters que inclui no pom.xml do seu projeto.
+        </p>
 
-          <hr />
+        <p class="lead">
+          Eles, basicamente, são dependências que agrupam outras dependências.
+          Inclusive, como temos esse grupo de dependências representadas pelo
+          starter, nosso pom.xml acaba por ficar mais organizado. Apesar do
+          Spring Boot, através da convenção, já deixar tudo configurado, nada
+          impede que você crie as suas customizações caso sejam necessárias. O
+          maior benefício do Spring Boot é que ele nos deixa mais livres para
+          pensarmos nas regras de negócio da nossa aplicação.
+        </p>
 
-          <!-- Comments Form -->
-          <div class="card my-4">
-            <h5 class="card-header">Deixe um comentario:</h5>
-            <div class="card-body">
-              <form>
-                <div class="form-group">
-                  <textarea class="form-control" rows="3"></textarea>
+        <hr />
+
+        <!-- Comments Form -->
+        <div class="card my-4">
+          <h5 class="card-header">Deixe um comentario:</h5>
+          <div class="card-body">
+            <form>
+              <div class="form-group">
+                <textarea class="form-control" rows="3"></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Single Comment -->
+        <div class="media mb-4">
+          <img class="d-flex mr-3 rounded-circle" src="images/user4.png" alt="" />
+          <div class="media-body">
+            <h5 class="mt-0">Sergio Cazu</h5>
+            Eu já trabalhei com Spring MVC, mas até o momento ainda não tinha
+            visto nada sobre o Spring Boot. Com esse artigo, deu para ter uma
+            noção do ganho de produtividade que é obtido utilizando o mesmo!
+            Parabéns pela objetividade do artigo e organização do
+            mesmo!Obrigado!
+          </div>
+        </div>
+
+        <!-- Comment with nested comments -->
+        <div class="media mb-4">
+          <img class="d-flex mr-3 rounded-circle" src="images/user2.png" alt="" />
+          <div class="media-body">
+            <h5 class="mt-0">Mario Celso</h5>
+            Alexandre, teria como fazer um artigo mostrando como criar um
+            sistema de autenticação e autorização com jwt e o Spring Boot?
+            <div class="media mt-4">
+              <img class="d-flex mr-3 rounded-circle" src="images/user3.png" alt="" />
+              <div class="media-body">
+                <h5 class="mt-0">Alexandre Afonso</h5>
+                Olá Mario Celso! Bacana esse tema pra um conteúdo. Anoitei o
+                tema aqui para podermos considerar nos próximos conteúdos que
+                planejarmos criar. Abraço.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Widgets Column -->
+      <div class="col-md-4">
+        <!-- Categories Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">Categorias</h5>
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-6">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#">Backend</a>
+                  </li>
+                  <li>
+                    <a href="#">FrontEnd</a>
+                  </li>
+                  <li>
+                    <a href="#">DevOps</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul class="list-unstyled mb-0">
+                  <li>
+                    <a href="#">JavaScript</a>
+                  </li>
+                  <li>
+                    <a href="#">CSS</a>
+                  </li>
+                  <li>
+                    <a href="#">Tutoriais</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Side Widget -->
+        <div class="card my-4">
+          <h5 class="card-header">Dicas do Autor</h5>
+          <div class="card-body">
+            Se você gostou do que viu nesse artigo, então imagino que vai
+            gostar muito também do nosso e-book Produtividade no
+            Desenvolvimento de Aplicações Web Com Spring Boot
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.row -->
+  </div>
+
+  <div component="components/footer.html"></div>
+
+  <!-- Modals -->
+
+  <!-- Search Modal -->
+  <div class="modal fade modal-search modal-full" tabindex="-1" role="dialog" aria-labelledby="modalSearch"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row justify-content-md-center">
+            <div class="col-md-6 text-center">
+              <div class="col-12">
+                <h5 class="modal-title h4" id="modalSearch">Pesquisar</h5>
+              </div>
+
+              <br />
+
+              <form action="/busca.html" method="GET" class="form-inline ml-auto">
+                <div class="input-group mb-3 col-12">
+                  <input type="text" name="filtro" class="form-control" placeholder="Digite o que deseja buscar"
+                    aria-label="Digite o que deseja buscar" aria-describedby="button-addon2" />
+                  <div class="input-group-append">
+                    <button class="btn btn-outline-primary" type="submit" id="button-addon2">
+                      <i class="fas fa-search"></i>
+                    </button>
+                  </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+
+              <br />
+
+              <div>
+                <div class="col-12">
+                  <p>Recomendados</p>
+                </div>
+                <div class="col-12">
+                  <a class="btn btn-primary" title="Ir para os artigos da categoria DevOps" href="/MenuDocker.html"
+                    role="button">Docker</a>
+                  <a class="btn btn-primary" title="Ir para os artigos da categoria Java" href="/MenuJava.html"
+                    role="button">Java</a>
+                  <a class="btn btn-primary" title="Ir para os artigos da categoria NodeJs" href="/MenuNodeJS.html"
+                    role="button">Node.js</a>
+                </div>
+              </div>
+
+              <br />
+
+              <div>
+                <div class="col-12">
+                  <p>Mais acessados</p>
+                </div>
+                <div class="col-12">
+                  <a class="btn btn-primary" title="Ir para os artigos da categoria Java" href="/MenuJava.html"
+                    role="button">Java</a>
+                  <a class="btn btn-primary" title="Ir para os artigos da categoria Python" href="/MenuPython.html"
+                    role="button">Python</a>
+                  <a class="btn btn-primary" title="Ir para os artigos da categoria NodeJs" href="/MenuNodeJS.html"
+                    role="button">Node.js</a>
+                </div>
+              </div>
+
+              <br />
+
+              <div>
+                <div class="col-12">
+                  <p>Histórico de acessos</p>
+                </div>
+                <div class="col-12">
+                  <a class="btn btn-primary" title="Ir para o artigo de Java" href="/ArtigoJava.html"
+                    role="button">Java</a>
+                  <a class="btn btn-primary" title="Ir para o artigo de DevOps" href="/ArtigoDevOps.html"
+                    role="button">DevOps</a>
+                  <a class="btn btn-primary" title="Ir para o artigo de Frontend" href="/ArtigoReact.html"
+                    role="button">Frontend</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Login Modal -->
+  <div class="modal fade modal-login modal-full" tabindex="-1" role="dialog" aria-labelledby="modalLogin"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row justify-content-md-center">
+            <div class="col-md-4">
+              <div class="col-12 text-center">
+                <h5 class="modal-title h4" id="modalLogin">Entrar</h5>
+
+                <br />
+
+                <p>Informe o usuário e senha para entrar no sistema</p>
+                <p>
+                  Não possui cadastro?
+                  <a href="#" title="Clique para criar um cadastro" data-toggle="modal" data-target=".modal-register"
+                    data-dismiss="modal">Clique aqui para criar.</a>
+                </p>
+              </div>
+
+              <br />
+
+              <div class="col-12 text-center">
+                <img src="/images/avatar.png" width="100px" alt="Avatar símbolico de uma pessoa"
+                  class="rounded-circle" />
+              </div>
+
+              <br />
+
+              <form action="">
+                <input type="hidden" name="authenticated" value="true" />
+                <div class="form-group">
+                  <label for="emailField">E-mail</label>
+                  <input type="email" class="form-control" id="emailField" aria-describedby="emailHelp"
+                    placeholder="Digite o seu e-mail" />
+                  <small id="emailHelp" class="form-text text-muted">Nós nunca compartilharemos seu e-mail com outra
+                    pessoa</small>
+                </div>
+                <div class="form-group">
+                  <label for="passwordField">Senha</label>
+                  <input type="password" class="form-control" id="passwordField" placeholder="Digita a sua senha" />
+                </div>
+                <div class="form-group text-right">
+                  <a href="#" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Cancelar</a>
+                  <button type="submit" class="btn btn-primary">
+                    Entrar
+                  </button>
+                </div>
+
+                <br />
+                <div class="form-group text-center">
+                  <p>
+                    Esqueceu a sua senha?
+                    <a href="#" title="Clique para recuperar a sua senha">Clique aqui para recuperá-la.</a>
+                  </p>
+                </div>
               </form>
             </div>
           </div>
-
-          <!-- Single Comment -->
-          <div class="media mb-4">
-            <img
-              class="d-flex mr-3 rounded-circle"
-              src="images/user4.png"
-              alt=""
-            />
-            <div class="media-body">
-              <h5 class="mt-0">Sergio Cazu</h5>
-              Eu já trabalhei com Spring MVC, mas até o momento ainda não tinha
-              visto nada sobre o Spring Boot. Com esse artigo, deu para ter uma
-              noção do ganho de produtividade que é obtido utilizando o mesmo!
-              Parabéns pela objetividade do artigo e organização do
-              mesmo!Obrigado!
-            </div>
-          </div>
-
-          <!-- Comment with nested comments -->
-          <div class="media mb-4">
-            <img
-              class="d-flex mr-3 rounded-circle"
-              src="images/user2.png"
-              alt=""
-            />
-            <div class="media-body">
-              <h5 class="mt-0">Mario Celso</h5>
-              Alexandre, teria como fazer um artigo mostrando como criar um
-              sistema de autenticação e autorização com jwt e o Spring Boot?
-              <div class="media mt-4">
-                <img
-                  class="d-flex mr-3 rounded-circle"
-                  src="images/user3.png"
-                  alt=""
-                />
-                <div class="media-body">
-                  <h5 class="mt-0">Alexandre Afonso</h5>
-                  Olá Mario Celso! Bacana esse tema pra um conteúdo. Anoitei o
-                  tema aqui para podermos considerar nos próximos conteúdos que
-                  planejarmos criar. Abraço.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sidebar Widgets Column -->
-        <div class="col-md-4">
-          <!-- Categories Widget -->
-          <div class="card my-4">
-            <h5 class="card-header">Categorias</h5>
-            <div class="card-body">
-              <div class="row">
-                <div class="col-lg-6">
-                  <ul class="list-unstyled mb-0">
-                    <li>
-                      <a href="#">Backend</a>
-                    </li>
-                    <li>
-                      <a href="#">FrontEnd</a>
-                    </li>
-                    <li>
-                      <a href="#">DevOps</a>
-                    </li>
-                  </ul>
-                </div>
-                <div class="col-lg-6">
-                  <ul class="list-unstyled mb-0">
-                    <li>
-                      <a href="#">JavaScript</a>
-                    </li>
-                    <li>
-                      <a href="#">CSS</a>
-                    </li>
-                    <li>
-                      <a href="#">Tutoriais</a>
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Side Widget -->
-          <div class="card my-4">
-            <h5 class="card-header">Dicas do Autor</h5>
-            <div class="card-body">
-              Se você gostou do que viu nesse artigo, então imagino que vai
-              gostar muito também do nosso e-book Produtividade no
-              Desenvolvimento de Aplicações Web Com Spring Boot
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /.row -->
-    </div>
-
-    <div component="components/footer.html"></div>
-
-    <!-- Modals -->
-
-    <!-- Search Modal -->
-    <div
-      class="modal fade modal-search modal-full"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="modalSearch"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="row justify-content-md-center">
-              <div class="col-md-6 text-center">
-                <div class="col-12">
-                  <h5 class="modal-title h4" id="modalSearch">Pesquisar</h5>
-                </div>
-
-                <br />
-
-                <form
-                  action="/busca.html"
-                  method="GET"
-                  class="form-inline ml-auto"
-                >
-                  <div class="input-group mb-3 col-12">
-                    <input
-                      type="text"
-                      name="filtro"
-                      class="form-control"
-                      placeholder="Digite o que deseja buscar"
-                      aria-label="Digite o que deseja buscar"
-                      aria-describedby="button-addon2"
-                    />
-                    <div class="input-group-append">
-                      <button
-                        class="btn btn-outline-primary"
-                        type="submit"
-                        id="button-addon2"
-                      >
-                        <i class="fas fa-search"></i>
-                      </button>
-                    </div>
-                  </div>
-                </form>
-
-                <br />
-
-                <div>
-                  <div class="col-12">
-                    <p>Recomendados</p>
-                  </div>
-                  <div class="col-12">
-                    <a
-                      class="btn btn-primary"
-                      title="Ir para os artigos da categoria DevOps"
-                      href="/MenuDocker.html"
-                      role="button"
-                      >Docker</a
-                    >
-                    <a
-                      class="btn btn-primary"
-                      title="Ir para os artigos da categoria Java"
-                      href="/MenuJava.html"
-                      role="button"
-                      >Java</a
-                    >
-                    <a
-                      class="btn btn-primary"
-                      title="Ir para os artigos da categoria NodeJs"
-                      href="/MenuNodeJS.html"
-                      role="button"
-                      >Node.js</a
-                    >
-                  </div>
-                </div>
-
-                <br />
-
-                <div>
-                  <div class="col-12">
-                    <p>Mais acessados</p>
-                  </div>
-                  <div class="col-12">
-                    <a
-                      class="btn btn-primary"
-                      title="Ir para os artigos da categoria Java"
-                      href="/MenuJava.html"
-                      role="button"
-                      >Java</a
-                    >
-                    <a
-                      class="btn btn-primary"
-                      title="Ir para os artigos da categoria Python"
-                      href="/MenuPython.html"
-                      role="button"
-                      >Python</a
-                    >
-                    <a
-                      class="btn btn-primary"
-                      title="Ir para os artigos da categoria NodeJs"
-                      href="/MenuNodeJS.html"
-                      role="button"
-                      >Node.js</a
-                    >
-                  </div>
-                </div>
-
-                <br />
-
-                <div>
-                  <div class="col-12">
-                    <p>Histórico de acessos</p>
-                  </div>
-                  <div class="col-12">
-                    <a
-                      class="btn btn-primary"
-                      title="Ir para o artigo de Java"
-                      href="/ArtigoJava.html"
-                      role="button"
-                      >Java</a
-                    >
-                    <a
-                      class="btn btn-primary"
-                      title="Ir para o artigo de DevOps"
-                      href="/ArtigoDevOps.html"
-                      role="button"
-                      >DevOps</a
-                    >
-                    <a
-                      class="btn btn-primary"
-                      title="Ir para o artigo de Frontend"
-                      href="/ArtigoReact.html"
-                      role="button"
-                      >Frontend</a
-                    >
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Login Modal -->
-    <div
-      class="modal fade modal-login modal-full"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="modalLogin"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="row justify-content-md-center">
-              <div class="col-md-4">
-                <div class="col-12 text-center">
-                  <h5 class="modal-title h4" id="modalLogin">Entrar</h5>
+  <!-- Register Modal -->
+  <div class="modal fade modal-register modal-full" tabindex="-1" role="dialog" aria-labelledby="modalRegister"
+    aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">×</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row justify-content-md-center">
+            <div class="col-md-6">
+              <div class="col-12 text-center">
+                <h5 class="modal-title h4" id="modalRegister">Cadastre-se</h5>
 
-                  <br />
+                <p>Informe os dados abaixo para se cadastrar no sistema</p>
+              </div>
 
-                  <p>Informe o usuário e senha para entrar no sistema</p>
+              <br />
+
+              <form action="">
+                <input type="hidden" name="authenticated" value="true" />
+
+                <div class="form-group">
+                  <label for="emailField">E-mail</label>
+                  <input type="email" class="form-control" id="emailField" aria-describedby="emailHelp"
+                    placeholder="Digite o seu e-mail" />
+                  <small id="emailHelp" class="form-text text-muted">Nós nunca compartilharemos seu e-mail com outra
+                    pessoa</small>
+                </div>
+                <div class="form-group">
+                  <label for="passwordField">Senha</label>
+                  <input type="password" class="form-control" id="passwordField" placeholder="Digita a sua senha" />
+                </div>
+                <div class="form-group">
+                  <label for="rePasswordField">Confirmação de senha</label>
+                  <input type="password" class="form-control" id="rePasswordField"
+                    placeholder="Digita a confirmação de senha" />
+                </div>
+                <div class="form-group text-right">
+                  <a href="#" class="btn btn-secondary" data-dismiss="modal" aria-label="Close">Cancelar</a>
+                  <button type="submit" class="btn btn-primary">
+                    Cadastrar
+                  </button>
+                </div>
+
+                <br />
+                <div class="form-group text-center">
                   <p>
-                    Não possui cadastro?
-                    <a
-                      href="#"
-                      title="Clique para criar um cadastro"
-                      data-toggle="modal"
-                      data-target=".modal-register"
-                      data-dismiss="modal"
-                      >Clique aqui para criar.</a
-                    >
+                    Já possui cadastro?
+                    <a href="#" title="Clique para entrar no sistema" data-toggle="modal" data-target=".modal-login"
+                      data-dismiss="modal">Clique aqui para entrar no sistema.</a>
                   </p>
                 </div>
-
-                <br />
-
-                <div class="col-12 text-center">
-                  <img
-                    src="/images/avatar.png"
-                    width="100px"
-                    alt="Avatar símbolico de uma pessoa"
-                    class="rounded-circle"
-                  />
-                </div>
-
-                <br />
-
-                <form action="">
-                  <input type="hidden" name="authenticated" value="true" />
-                  <div class="form-group">
-                    <label for="emailField">E-mail</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="emailField"
-                      aria-describedby="emailHelp"
-                      placeholder="Digite o seu e-mail"
-                    />
-                    <small id="emailHelp" class="form-text text-muted"
-                      >Nós nunca compartilharemos seu e-mail com outra
-                      pessoa</small
-                    >
-                  </div>
-                  <div class="form-group">
-                    <label for="passwordField">Senha</label>
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="passwordField"
-                      placeholder="Digita a sua senha"
-                    />
-                  </div>
-                  <div class="form-group text-right">
-                    <a
-                      href="#"
-                      class="btn btn-secondary"
-                      data-dismiss="modal"
-                      aria-label="Close"
-                      >Cancelar</a
-                    >
-                    <button type="submit" class="btn btn-primary">
-                      Entrar
-                    </button>
-                  </div>
-
-                  <br />
-                  <div class="form-group text-center">
-                    <p>
-                      Esqueceu a sua senha?
-                      <a href="#" title="Clique para recuperar a sua senha"
-                        >Clique aqui para recuperá-la.</a
-                      >
-                    </p>
-                  </div>
-                </form>
-              </div>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Register Modal -->
-    <div
-      class="modal fade modal-register modal-full"
-      tabindex="-1"
-      role="dialog"
-      aria-labelledby="modalRegister"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-xl">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button
-              type="button"
-              class="close"
-              data-dismiss="modal"
-              aria-label="Close"
-            >
-              <span aria-hidden="true">×</span>
-            </button>
-          </div>
-          <div class="modal-body">
-            <div class="row justify-content-md-center">
-              <div class="col-md-6">
-                <div class="col-12 text-center">
-                  <h5 class="modal-title h4" id="modalRegister">Cadastre-se</h5>
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="vendor/fontawesome/js/all.js"></script>
 
-                  <p>Informe os dados abaixo para se cadastrar no sistema</p>
-                </div>
+  <script src="js/index.js"></script>
+</body>
 
-                <br />
-
-                <form action="">
-                  <input type="hidden" name="authenticated" value="true" />
-
-                  <div class="form-group">
-                    <label for="emailField">E-mail</label>
-                    <input
-                      type="email"
-                      class="form-control"
-                      id="emailField"
-                      aria-describedby="emailHelp"
-                      placeholder="Digite o seu e-mail"
-                    />
-                    <small id="emailHelp" class="form-text text-muted"
-                      >Nós nunca compartilharemos seu e-mail com outra
-                      pessoa</small
-                    >
-                  </div>
-                  <div class="form-group">
-                    <label for="passwordField">Senha</label>
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="passwordField"
-                      placeholder="Digita a sua senha"
-                    />
-                  </div>
-                  <div class="form-group">
-                    <label for="rePasswordField">Confirmação de senha</label>
-                    <input
-                      type="password"
-                      class="form-control"
-                      id="rePasswordField"
-                      placeholder="Digita a confirmação de senha"
-                    />
-                  </div>
-                  <div class="form-group text-right">
-                    <a
-                      href="#"
-                      class="btn btn-secondary"
-                      data-dismiss="modal"
-                      aria-label="Close"
-                      >Cancelar</a
-                    >
-                    <button type="submit" class="btn btn-primary">
-                      Cadastrar
-                    </button>
-                  </div>
-
-                  <br />
-                  <div class="form-group text-center">
-                    <p>
-                      Já possui cadastro?
-                      <a
-                        href="#"
-                        title="Clique para entrar no sistema"
-                        data-toggle="modal"
-                        data-target=".modal-login"
-                        data-dismiss="modal"
-                        >Clique aqui para entrar no sistema.</a
-                      >
-                    </p>
-                  </div>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="vendor/fontawesome/js/all.js"></script>
-
-    <script src="js/authentication.js"></script>
-  </body>
 </html>
