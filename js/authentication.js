@@ -6,6 +6,7 @@
 
   $(document).ready(() => {
     init();
+    loadComponent();
   });
 
   function init() {
@@ -56,5 +57,31 @@
         reject();
       }
     });
+  }
+
+  function loadComponent() {
+    const elements = document.getElementsByTagName("*");
+
+    for (let i = 0; i < elements.length; i++) {
+        const element = elements[i];
+        
+        const file = element.getAttribute("component");
+        
+        if (file) {
+            const xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function () {
+                if (this.readyState == 4) {
+                    if (this.status == 200) { element.innerHTML = this.responseText; }
+                    if (this.status == 404) { element.innerHTML = "Page not found."; }
+                    element.removeAttribute("component");
+                    loadComponent();
+                }
+            }
+            xhttp.open("GET", file, true);
+            xhttp.send();
+            
+            return;
+        }
+    }
   }
 })();
