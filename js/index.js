@@ -23,8 +23,10 @@
       };
 
       localStorage.setItem("user", JSON.stringify(user));
+      location.href = "/MeusArtigos.html";
     } else if (authenticated === "false") {
       localStorage.removeItem("user");
+      location.href = "/index.html";
     }
   }
 
