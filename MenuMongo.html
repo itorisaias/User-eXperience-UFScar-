@@ -1,60 +1,60 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-<head>
-
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
     <title>UX - Diretivas para Web</title>
 
     <!-- Bootstrap core CSS -->
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="vendor/fontawesome/css/all.css" rel="stylesheet">
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="vendor/fontawesome/css/all.css" rel="stylesheet" />
 
     <!-- Custom styles for this template -->
-    <link href="css/ux.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-</head>
-
-<body class="d-flex flex-column min-vh-100">
+  <body class="d-flex flex-column min-vh-100">
     <div component="components/nav-bar.html"></div>
 
     <!-- Page Content -->
     <div class="container">
+      <!-- Page Heading/Breadcrumbs -->
+      <h1 class="mt-4 mb-3">Artigos de <span lang="en">MongoDB</span></h1>
 
-        <!-- Page Heading/Breadcrumbs -->
-        <h1 class="mt-4 mb-3">Artigos de <span lang="en">MongoDB</span>
-        </h1>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="index.html"><span lang="en">Home</span></a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="#"><span lang="en">Database</span></a>
+        </li>
+        <li class="breadcrumb-item">
+          <a href="MenuMongo.html"><span lang="en">MongoDB</span></a>
+        </li>
+      </ol>
 
-        <ol class="breadcrumb">
-            <li class="breadcrumb-item"><a href="index.html"><span lang="en">Home</span></a></li>
-            <li class="breadcrumb-item"><a href="#"><span lang="en">Database</span></a></li>
-            <li class="breadcrumb-item"><a href="MenuMongo.html"><span lang="en">MongoDB</span></a></li>
-        </ol>
+      <!-- Blog Post -->
 
-        <!-- Blog Post -->
-
-        <div class="card mb-4">
-            <div class="card-body">
-                <div class="row">
-
-                    <div class="col-3 mx-auto">
-                        <div class="text-center">
-                            Não há artigos disponíveis no momento.
-                        </div>
-                    </div>
-
-                </div>
+      <div class="card mb-4">
+        <div class="card-body">
+          <div class="row">
+            <div class="col-3 mx-auto">
+              <div class="text-center">
+                Não há artigos disponíveis no momento.
+              </div>
             </div>
-
+          </div>
         </div>
+      </div>
 
-
-        <!-- Pagination -->
-        <!--
+      <!-- Pagination -->
+      <!--
             <ul class="pagination justify-content-center mb-4">
             <li class="page-item">
             <a class="page-link" href="#">&larr; Older</a>
@@ -64,7 +64,6 @@
             </li>
             </ul>
             -->
-
     </div>
 
     <div class="wrapper flex-grow-1"></div>
@@ -74,220 +73,368 @@
     <!-- Modals -->
 
     <!-- Search Modal -->
-    <div class="modal fade modal-search modal-full" tabindex="-1" role="dialog" aria-labelledby="modalSearch"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
-                    </button>
+    <div
+      class="modal fade modal-search modal-full"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalSearch"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row justify-content-md-center">
+              <div class="col-md-6 text-center">
+                <div class="col-12">
+                  <h5 class="modal-title h4" id="modalSearch">Pesquisar</h5>
                 </div>
-                <div class="modal-body">
-                    <div class="row justify-content-md-center">
-                        <div class="col-md-6 text-center">
-                            <div class="col-12">
-                                <h5 class="modal-title h4" id="modalSearch">Pesquisar</h5>
-                            </div>
 
-                            <br />
+                <br />
 
-                            <form action="/busca.html" method="GET" class="form-inline ml-auto">
-                                <div class="input-group mb-3 col-12">
-                                    <input type="text" name="filtro" class="form-control"
-                                        placeholder="Digite o que deseja buscar" aria-label="Digite o que deseja buscar"
-                                        aria-describedby="button-addon2">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-outline-primary" type="submit" id="button-addon2"><i
-                                                class="fas fa-search"></i></button>
-                                    </div>
-                                </div>
-                            </form>
-
-                            <br />
-
-                            <div>
-                                <div class="col-12">
-                                    <p>Recomendados</p>
-                                </div>
-                                <div class="col-12">
-                                    <a class="btn btn-primary" title="Ir para os artigos da categoria DevOps"
-                                        href="/MenuDocker.html" role="button"><span lang="en">Docker</span></a>
-                                    <a class="btn btn-primary" title="Ir para os artigos da categoria Java"
-                                        href="/MenuJava.html" role="button">Java</a>
-                                    <a class="btn btn-primary" title="Ir para os artigos da categoria NodeJs"
-                                        href="/MenuNodeJS.html" role="button"><span lang="en">Node.js</span></a>
-                                </div>
-                            </div>
-
-                            <br />
-
-                            <div>
-                                <div class="col-12">
-                                    <p>Mais acessados</p>
-                                </div>
-                                <div class="col-12">
-                                    <a class="btn btn-primary" title="Ir para os artigos da categoria Java"
-                                        href="/MenuJava.html" role="button">Java</a>
-                                    <a class="btn btn-primary" title="Ir para os artigos da categoria Python"
-                                        href="/MenuPython.html" role="button"><span lang="en">Python</span></a>
-                                    <a class="btn btn-primary" title="Ir para os artigos da categoria NodeJs"
-                                        href="/MenuNodeJS.html" role="button"><span lang="en">Node.js</span></a>
-                                </div>
-                            </div>
-
-                            <br />
-
-                            <div>
-                                <div class="col-12">
-                                    <p>Histórico de acessos</p>
-                                </div>
-                                <div class="col-12">
-                                    <a class="btn btn-primary" title="Ir para o artigo de Java" href="/ArtigoJava.html"
-                                        role="button">Java</a>
-                                    <a class="btn btn-primary" title="Ir para o artigo de DevOps"
-                                        href="/ArtigoDevOps.html" role="button"><span lang="en">DevOps</span></a>
-                                    <a class="btn btn-primary" title="Ir para o artigo de Frontend"
-                                        href="/ArtigoReact.html" role="button"><span lang="en">Frontend</span></a>
-                                </div>
-                            </div>
-                        </div>
+                <form
+                  action="/busca.html"
+                  method="GET"
+                  class="form-inline ml-auto"
+                >
+                  <div class="input-group mb-3 col-12">
+                    <input
+                      type="text"
+                      name="filtro"
+                      class="form-control"
+                      placeholder="Digite o que deseja buscar"
+                      aria-label="Digite o que deseja buscar"
+                      aria-describedby="button-addon2"
+                    />
+                    <div class="input-group-append">
+                      <button
+                        class="btn btn-outline-primary"
+                        type="submit"
+                        id="button-addon2"
+                      >
+                        <i class="fas fa-search"></i>
+                      </button>
                     </div>
+                  </div>
+                </form>
+
+                <br />
+
+                <div>
+                  <div class="col-12">
+                    <p>Recomendados</p>
+                  </div>
+                  <div class="col-12">
+                    <a
+                      class="btn btn-primary"
+                      title="Ir para os artigos da categoria DevOps"
+                      href="/MenuDocker.html"
+                      role="button"
+                      ><span lang="en">Docker</span></a
+                    >
+                    <a
+                      class="btn btn-primary"
+                      title="Ir para os artigos da categoria Java"
+                      href="/MenuJava.html"
+                      role="button"
+                      >Java</a
+                    >
+                    <a
+                      class="btn btn-primary"
+                      title="Ir para os artigos da categoria NodeJs"
+                      href="/MenuNodeJS.html"
+                      role="button"
+                      ><span lang="en">Node.js</span></a
+                    >
+                  </div>
                 </div>
+
+                <br />
+
+                <div>
+                  <div class="col-12">
+                    <p>Mais acessados</p>
+                  </div>
+                  <div class="col-12">
+                    <a
+                      class="btn btn-primary"
+                      title="Ir para os artigos da categoria Java"
+                      href="/MenuJava.html"
+                      role="button"
+                      >Java</a
+                    >
+                    <a
+                      class="btn btn-primary"
+                      title="Ir para os artigos da categoria Python"
+                      href="/MenuPython.html"
+                      role="button"
+                      ><span lang="en">Python</span></a
+                    >
+                    <a
+                      class="btn btn-primary"
+                      title="Ir para os artigos da categoria NodeJs"
+                      href="/MenuNodeJS.html"
+                      role="button"
+                      ><span lang="en">Node.js</span></a
+                    >
+                  </div>
+                </div>
+
+                <br />
+
+                <div>
+                  <div class="col-12">
+                    <p>Histórico de acessos</p>
+                  </div>
+                  <div class="col-12">
+                    <a
+                      class="btn btn-primary"
+                      title="Ir para o artigo de Java"
+                      href="/ArtigoJava.html"
+                      role="button"
+                      >Java</a
+                    >
+                    <a
+                      class="btn btn-primary"
+                      title="Ir para o artigo de DevOps"
+                      href="/ArtigoDevOps.html"
+                      role="button"
+                      ><span lang="en">DevOps</span></a
+                    >
+                    <a
+                      class="btn btn-primary"
+                      title="Ir para o artigo de Frontend"
+                      href="/ArtigoReact.html"
+                      role="button"
+                      ><span lang="en">Frontend</span></a
+                    >
+                  </div>
+                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Login Modal -->
-    <div class="modal fade modal-login modal-full" tabindex="-1" role="dialog" aria-labelledby="modalLogin"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
+    <div
+      class="modal fade modal-login modal-full"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalLogin"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row justify-content-md-center">
+              <div class="col-md-4">
+                <div class="col-12 text-center">
+                  <h5 class="modal-title h4" id="modalLogin">Entrar</h5>
+
+                  <br />
+
+                  <p>Informe o usuário e senha para entrar no sistema</p>
+                  <p>
+                    Não possui cadastro?
+                    <a
+                      href="#"
+                      title="Clique para criar um cadastro"
+                      data-toggle="modal"
+                      data-target=".modal-register"
+                      data-dismiss="modal"
+                      >Clique aqui para criar.</a
+                    >
+                  </p>
+                </div>
+
+                <br />
+
+                <div class="col-12 text-center">
+                  <img
+                    src="/images/avatar.png"
+                    width="100px"
+                    alt="Avatar símbolico de uma pessoa"
+                    class="rounded-circle"
+                  />
+                </div>
+
+                <br />
+
+                <form action="">
+                  <input type="hidden" name="authenticated" value="true" />
+                  <div class="form-group">
+                    <label for="emailField">E-mail</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="emailField"
+                      aria-describedby="emailHelp"
+                      placeholder="Digite o seu e-mail"
+                    />
+                    <small id="emailHelp" class="form-text text-muted"
+                      >Nós nunca compartilharemos seu e-mail com outra
+                      pessoa</small
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="passwordField">Senha</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="passwordField"
+                      placeholder="Digita a sua senha"
+                    />
+                  </div>
+                  <div class="form-group text-right">
+                    <a
+                      href="#"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                      >Cancelar</a
+                    >
+                    <button type="submit" class="btn btn-primary">
+                      Entrar
                     </button>
-                </div>
-                <div class="modal-body">
-                    <div class="row justify-content-md-center">
-                        <div class="col-md-4">
-                            <div class="col-12 text-center">
-                                <h5 class="modal-title h4" id="modalLogin">Entrar</h5>
+                  </div>
 
-                                <br />
-
-                                <p>Informe o usuário e senha para entrar no sistema</p>
-                                <p>Não possui cadastro? <a href="#" title="Clique para criar um cadastro"
-                                        data-toggle="modal" data-target=".modal-register" data-dismiss="modal">Clique
-                                        aqui
-                                        para criar.</a></p>
-                            </div>
-
-                            <br />
-
-                            <div class="col-12 text-center">
-                                <img src="/images/avatar.png" width="100px" alt="Avatar símbolico de uma pessoa"
-                                    class="rounded-circle">
-                            </div>
-
-                            <br />
-
-                            <form action="">
-                                <input type="hidden" name="authenticated" value="true" />
-                                <div class="form-group">
-                                    <label for="emailField">E-mail</label>
-                                    <input type="email" class="form-control" id="emailField"
-                                        aria-describedby="emailHelp" placeholder="Digite o seu e-mail">
-                                    <small id="emailHelp" class="form-text text-muted">Nós nunca compartilharemos seu
-                                        e-mail
-                                        com outra pessoa</small>
-                                </div>
-                                <div class="form-group">
-                                    <label for="passwordField">Senha</label>
-                                    <input type="password" class="form-control" id="passwordField"
-                                        placeholder="Digita a sua senha">
-                                </div>
-                                <div class="form-group text-right">
-                                    <a href="#" class="btn btn-secondary" data-dismiss="modal"
-                                        aria-label="Close">Cancelar</a>
-                                    <button type="submit" class="btn btn-primary">Entrar</button>
-                                </div>
-
-                                <br />
-                                <div class="form-group text-center">
-                                    <p>Esqueceu a sua senha? <a href="#"
-                                            title="Clique para recuperar a sua senha">Clique
-                                            aqui para recuperá-la.</a></p>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                  <br />
+                  <div class="form-group text-center">
+                    <p>
+                      Esqueceu a sua senha?
+                      <a href="#" title="Clique para recuperar a sua senha"
+                        >Clique aqui para recuperá-la.</a
+                      >
+                    </p>
+                  </div>
+                </form>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Register Modal -->
-    <div class="modal fade modal-register modal-full" tabindex="-1" role="dialog" aria-labelledby="modalRegister"
-        aria-hidden="true">
-        <div class="modal-dialog modal-xl">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">×</span>
+    <div
+      class="modal fade modal-register modal-full"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalRegister"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row justify-content-md-center">
+              <div class="col-md-6">
+                <div class="col-12 text-center">
+                  <h5 class="modal-title h4" id="modalRegister">Cadastre-se</h5>
+
+                  <p>Informe os dados abaixo para se cadastrar no sistema</p>
+                </div>
+
+                <br />
+
+                <form action="">
+                  <input type="hidden" name="authenticated" value="true" />
+
+                  <div class="form-group">
+                    <label for="emailField">E-mail</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="emailField"
+                      aria-describedby="emailHelp"
+                      placeholder="Digite o seu e-mail"
+                    />
+                    <small id="emailHelp" class="form-text text-muted"
+                      >Nós nunca compartilharemos seu e-mail com outra
+                      pessoa</small
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="passwordField">Senha</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="passwordField"
+                      placeholder="Digita a sua senha"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="rePasswordField">Confirmação de senha</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="rePasswordField"
+                      placeholder="Digita a confirmação de senha"
+                    />
+                  </div>
+                  <div class="form-group text-right">
+                    <a
+                      href="#"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                      >Cancelar</a
+                    >
+                    <button type="submit" class="btn btn-primary">
+                      Cadastrar
                     </button>
-                </div>
-                <div class="modal-body">
-                    <div class="row justify-content-md-center">
-                        <div class="col-md-6">
-                            <div class="col-12 text-center">
-                                <h5 class="modal-title h4" id="modalRegister">Cadastre-se</h5>
+                  </div>
 
-                                <p>Informe os dados abaixo para se cadastrar no sistema</p>
-                            </div>
-
-                            <br />
-
-                            <form action="">
-                                <input type="hidden" name="authenticated" value="true" />
-
-                                <div class="form-group">
-                                    <label for="emailField">E-mail</label>
-                                    <input type="email" class="form-control" id="emailField"
-                                        aria-describedby="emailHelp" placeholder="Digite o seu e-mail">
-                                    <small id="emailHelp" class="form-text text-muted">Nós nunca compartilharemos seu
-                                        e-mail
-                                        com outra pessoa</small>
-                                </div>
-                                <div class="form-group">
-                                    <label for="passwordField">Senha</label>
-                                    <input type="password" class="form-control" id="passwordField"
-                                        placeholder="Digita a sua senha">
-                                </div>
-                                <div class="form-group">
-                                    <label for="rePasswordField">Confirmação de senha</label>
-                                    <input type="password" class="form-control" id="rePasswordField"
-                                        placeholder="Digita a confirmação de senha">
-                                </div>
-                                <div class="form-group text-right">
-                                    <a href="#" class="btn btn-secondary" data-dismiss="modal"
-                                        aria-label="Close">Cancelar</a>
-                                    <button type="submit" class="btn btn-primary">Cadastrar</button>
-                                </div>
-
-                                <br />
-                                <div class="form-group text-center">
-                                    <p>Já possui cadastro? <a href="#" title="Clique para entrar no sistema"
-                                            data-toggle="modal" data-target=".modal-login" data-dismiss="modal">Clique
-                                            aqui
-                                            para entrar no sistema.</a></p>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
+                  <br />
+                  <div class="form-group text-center">
+                    <p>
+                      Já possui cadastro?
+                      <a
+                        href="#"
+                        title="Clique para entrar no sistema"
+                        data-toggle="modal"
+                        data-target=".modal-login"
+                        data-dismiss="modal"
+                        >Clique aqui para entrar no sistema.</a
+                      >
+                    </p>
+                  </div>
+                </form>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
 
     <!-- Bootstrap core JavaScript -->
@@ -296,6 +443,5 @@
     <script src="vendor/fontawesome/js/all.js"></script>
 
     <script src="js/index.js"></script>
-</body>
-
+  </body>
 </html>

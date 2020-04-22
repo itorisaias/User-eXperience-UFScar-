@@ -1,156 +1,148 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-<head>
+    <title>UX - Diretivas para Web</title>
 
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="">
-  <meta name="author" content="">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="vendor/fontawesome/css/all.css" rel="stylesheet" />
 
-  <title>UX - Diretivas para Web</title>
+    <!-- Custom styles for this template -->
+    <link href="css/style.css" rel="stylesheet" />
+  </head>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="vendor/fontawesome/css/all.css" rel="stylesheet">
+  <body>
+    <div component="components/nav-bar.html"></div>
 
-  <!-- Custom styles for this template -->
-  <link href="css/ux.css" rel="stylesheet">
+    <!-- Page Content -->
+    <div class="container">
+      <!-- Page Heading/Breadcrumbs -->
+      <h1 class="mt-4 mb-3">
+        <small> Esse é o seu Artigo Postado! Legal não !? </small>
+      </h1>
 
-</head>
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="breadcrumb-item active">FrontEnd</li>
+      </ol>
 
-<body>
+      <div class="row">
+        <!-- Post Content Column -->
+        <div class="col-lg-8">
+          <!-- Preview Image -->
+          <img class="img-fluid rounded" src="images/memeLeo.png" alt="" />
 
-  <div component="components/nav-bar.html"></div>
+          <hr />
 
-  <!-- Page Content -->
-  <div class="container">
+          <!-- Date/Time -->
+          <p>Escrito por O MELHOR USUÁRIO em 25/04/2020</p>
 
-    <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">
-      <small> Esse é o seu Artigo Postado! Legal não !?
+          <hr />
 
-      </small>
-    </h1>
+          <!-- Post Content -->
+          <p class="lead">
+            Este é o resultado final do seu artigo. No momento é apenas esse
+            texto, mas considere que você tenha escrito o artigo.
+          </p>
 
-    <ol class="breadcrumb">
-      <li class="breadcrumb-item">
-        <a href="index.html">Home</a>
-      </li>
-      <li class="breadcrumb-item active">FrontEnd</li>
-    </ol>
+          <p class="lead">
+            Agora o seu conhecimento pode atingir milhares de usuários!
+          </p>
 
-    <div class="row">
+          <hr />
 
-      <!-- Post Content Column -->
-      <div class="col-lg-8">
-
-        <!-- Preview Image -->
-        <img class="img-fluid rounded" src="images/memeLeo.png" alt="">
-
-        <hr>
-
-        <!-- Date/Time -->
-        <p>Escrito por O MELHOR USUÁRIO em 25/04/2020 </p>
-
-        <hr>
-
-        <!-- Post Content -->
-        <p class="lead">Este é o resultado final do seu artigo. No momento é apenas esse texto, mas considere que você
-          tenha escrito o artigo.</p>
-
-        <p class="lead"> Agora o seu conhecimento pode atingir milhares de usuários!</p>
-
-
-
-        <hr>
-
-        <!-- Comments Form -->
-        <div class="card my-4">
-          <h5 class="card-header">Deixe um comentario:</h5>
-          <div class="card-body">
-            <form>
-              <div class="form-group">
-                <textarea class="form-control" rows="3"></textarea>
-              </div>
-              <button type="submit" class="btn btn-primary">Enviar</button>
-            </form>
+          <!-- Comments Form -->
+          <div class="card my-4">
+            <h5 class="card-header">Deixe um comentario:</h5>
+            <div class="card-body">
+              <form>
+                <div class="form-group">
+                  <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </form>
+            </div>
           </div>
+
+          <!-- Single Comment -->
+          <div class="media mb-4">
+            <img
+              class="d-flex mr-3 rounded-circle"
+              src="images/user4.png"
+              alt=""
+            />
+            <div class="media-body">
+              <h5 class="mt-0">Fabio Fontana</h5>
+              Parabéns pelo seu primeiro Artigo!
+            </div>
+          </div>
+
+          <!-- Comment with nested comments -->
         </div>
 
-        <!-- Single Comment -->
-        <div class="media mb-4">
-          <img class="d-flex mr-3 rounded-circle" src="images/user4.png" alt="">
-          <div class="media-body">
-            <h5 class="mt-0">Fabio Fontana</h5>
-            Parabéns pelo seu primeiro Artigo!
-
-          </div>
-        </div>
-
-        <!-- Comment with nested comments -->
-
-
-      </div>
-
-      <!-- Sidebar Widgets Column -->
-      <div class="col-md-4">
-
-
-        <!-- Categories Widget -->
-        <div class="card my-4">
-          <h5 class="card-header">Categorias</h5>
-          <div class="card-body">
-            <div class="row">
-              <div class="col-lg-6">
-                <ul class="list-unstyled mb-0">
-                  <li>
-                    <a href="#">Backend</a>
-                  </li>
-                  <li>
-                    <a href="#">FrontEnd</a>
-                  </li>
-                  <li>
-                    <a href="#">DevOps</a>
-                  </li>
-                </ul>
-              </div>
-              <div class="col-lg-6">
-                <ul class="list-unstyled mb-0">
-                  <li>
-                    <a href="#">JavaScript</a>
-                  </li>
-                  <li>
-                    <a href="#">CSS</a>
-                  </li>
-                  <li>
-                    <a href="#">Tutoriais</a>
-                  </li>
-                </ul>
+        <!-- Sidebar Widgets Column -->
+        <div class="col-md-4">
+          <!-- Categories Widget -->
+          <div class="card my-4">
+            <h5 class="card-header">Categorias</h5>
+            <div class="card-body">
+              <div class="row">
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#">Backend</a>
+                    </li>
+                    <li>
+                      <a href="#">FrontEnd</a>
+                    </li>
+                    <li>
+                      <a href="#">DevOps</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-lg-6">
+                  <ul class="list-unstyled mb-0">
+                    <li>
+                      <a href="#">JavaScript</a>
+                    </li>
+                    <li>
+                      <a href="#">CSS</a>
+                    </li>
+                    <li>
+                      <a href="#">Tutoriais</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
-        </div>
 
-        <div class="card my-4">
-          <h5 class="card-header">Dicas do Autor</h5>
-          <div class="card-body">
-            Continue postando!</div>
+          <div class="card my-4">
+            <h5 class="card-header">Dicas do Autor</h5>
+            <div class="card-body">
+              Continue postando!
+            </div>
+          </div>
         </div>
-
       </div>
-
     </div>
-  </div>
 
-  <div component="components/footer.html"></div>
+    <div component="components/footer.html"></div>
 
-  <!-- Bootstrap core JavaScript -->
-  <script src="vendor/jquery/jquery.min.js"></script>
-  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="vendor/fontawesome/js/all.js"></script>
-  <script src="js/index.js"></script>
-
-</body>
-
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/fontawesome/js/all.js"></script>
+    <script src="js/index.js"></script>
+  </body>
 </html>

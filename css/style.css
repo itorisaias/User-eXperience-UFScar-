@@ -43,3 +43,8 @@ body {
   font-size: 2rem;
 }
 
+.card-text {
+  text-align: justify;
+  margin-left: 10px;
+  margin-right: 10px;
+}
