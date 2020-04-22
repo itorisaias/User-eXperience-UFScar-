@@ -5,8 +5,8 @@
   const authenticatedElements = $(".authenticated");
 
   $(document).ready(() => {
-    init();
     loadComponent();
+    init();
   });
 
   function init() {
