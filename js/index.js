@@ -1,30 +1,10 @@
 (() => {
   const AUTH_PARAM = "authenticated=true";
 
-  const unauthenticatedElements = $(".unauthenticated");
-  const authenticatedElements = $(".authenticated");
-
   $(document).ready(() => {
     loadComponent();
-    init();
-  });
-
-  function init() {
     setUserAuthenticationStatus();
-
-    isAuthenticated()
-      .then(() => {
-        console.log("Usuário está autenticado.");
-
-        authenticatedElements.removeClass("d-none");
-        unauthenticatedElements.remove();
-      })
-      .catch(() => {
-        console.log("Usuário não está autenticado.");
-
-        authenticatedElements.remove();
-      });
-  }
+  });
 
   function getQueryParam(param) {
     var rx = new RegExp("[?&]" + param + "=([^&]+).*$");
@@ -59,29 +39,57 @@
     });
   }
 
+  const onFileReady = {
+    "components/nav-bar.html": () => {
+      const unauthenticatedElements = $(".unauthenticated");
+      const authenticatedElements = $(".authenticated");
+
+      isAuthenticated()
+        .then(() => {
+          console.log("Usuário está autenticado.");
+
+          authenticatedElements.removeClass("d-none");
+          unauthenticatedElements.remove();
+        })
+        .catch(() => {
+          console.log("Usuário não está autenticado.");
+
+          authenticatedElements.remove();
+        });
+    },
+  };
+
   function loadComponent() {
     const elements = document.getElementsByTagName("*");
 
     for (let i = 0; i < elements.length; i++) {
-        const element = elements[i];
-        
-        const file = element.getAttribute("component");
-        
-        if (file) {
-            const xhttp = new XMLHttpRequest();
-            xhttp.onreadystatechange = function () {
-                if (this.readyState == 4) {
-                    if (this.status == 200) { element.innerHTML = this.responseText; }
-                    if (this.status == 404) { element.innerHTML = "Page not found."; }
-                    element.removeAttribute("component");
-                    loadComponent();
-                }
+      const element = elements[i];
+
+      const file = element.getAttribute("component");
+
+      if (file) {
+        const xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4) {
+            if (this.status == 200) {
+              element.innerHTML = this.responseText;
+
+              if (typeof onFileReady[file] === "function") {
+                onFileReady[file]();
+              }
             }
-            xhttp.open("GET", file, true);
-            xhttp.send();
-            
-            return;
-        }
+            if (this.status == 404) {
+              element.innerHTML = "Page not found.";
+            }
+            element.removeAttribute("component");
+            loadComponent();
+          }
+        };
+        xhttp.open("GET", file, true);
+        xhttp.send();
+
+        return;
+      }
     }
   }
 })();

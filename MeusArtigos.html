@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>UX - Diretivas para Web</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="vendor/fontawesome/css/all.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/ux.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div component="components/nav-bar.html"></div>
+
+    <!-- Page Content -->
+    <div class="container">
+      <!-- Page Heading/Breadcrumbs -->
+      <h1 class="mt-4 mb-3">Meus Artigos</h1>
+
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="index.html"><span lang="en">Home</span></a>
+        </li>
+        <li class="breadcrumb-item">
+          <span>Meus Artigos</span>
+        </li>
+      </ol>
+
+      <a
+        class="btn btn-primary btn-fixed-action"
+        href="ArtigoDoUsuario.html"
+        title="Criar novo artigo"
+      >
+        <i class="fa fa-plus"></i>
+      </a>
+
+      <!-- Blog Post -->
+
+      <div class="card mb-4">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-8">
+              <span class="h4"
+                >O que é <span lang="en">Spring Boot</span>?</span
+              >
+            </div>
+            <div class="col-4 text-right">
+              <a class="btn btn-danger" href="#" title="Excluir artigo"
+                ><i class="fa fa-trash"></i
+              ></a>
+              <a
+                class="btn btn-primary"
+                href="EditarArtigoDoUsuario.html"
+                title="Editar artigo"
+                ><i class="fa fa-edit"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-lg-3">
+              <a href="#">
+                <img
+                  class="img-fluid rounded"
+                  src="images/SpringBoot.png"
+                  alt="Logo do framework spring boot"
+              /></a>
+            </div>
+
+            <div class="col-lg-9">
+              <p class="card-text preview-description-article">
+                Muitas pessoas morrem de medo de terem que configurar uma
+                aplicação do zero. Geralmente, são necessárias várias
+                configurações para só então começar a codificar. Agora, imagine
+                pular toda essa parte chata de configurações e criar um projeto
+                onde você já tenha tudo o que precisa para começar uma
+                aplicação. Muito bom, não é mesmo?
+              </p>
+              <a href="ArtigoJava.html" class="btn btn-primary"
+                >Visualizar artigo &rarr;</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-8">
+              <span class="h4"
+                >Como construir uma aplicação com
+                <span lang="en">Docker</span>?</span
+              >
+            </div>
+            <div class="col-4 text-right">
+              <a class="btn btn-danger" href="#" title="Excluir artigo"
+                ><i class="fa fa-trash"></i
+              ></a>
+              <a
+                class="btn btn-primary"
+                href="EditarArtigoDoUsuario.html"
+                title="Editar artigo"
+                ><i class="fa fa-edit"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="row">
+            <div class="col-lg-9">
+              <p class="card-text preview-description-article">
+                Podemos dizer que as palavras chaves para o
+                <span lang="en">Docker</span> são: construir, entregar e rodar
+                em qualquer ambiente (<span lang="en"
+                  >develop, ship and run anywhere</span
+                >). Nada mais que uma plataforma aberta para criação, execução e
+                publicação (<span lang="en">deploy</span>) de
+                <span lang="en">containers</span>. Um
+                <span lang="en">Container</span> é a forma de empacotar sua
+                aplicação e suas dependências (bibliotecas) de forma
+                padronizada.
+              </p>
+              <a href="ArtigoDevOps.html" class="btn btn-primary"
+                >Visualizar Artigo &rarr;</a
+              >
+            </div>
+
+            <div class="col-lg-3">
+              <a href="ArtigoDevOps.html">
+                <img
+                  class="img-fluid rounded"
+                  src="images/docker.png"
+                  alt="Imagem de vários container empilhados"
+              /></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="card mb-4">
+        <div class="card-header">
+          <div class="row">
+            <div class="col-8">
+              <span class="h4"
+                ><span lang="en">React-Bootstrap</span>: a fusão entre o
+                <span lang="en">React</span> e o
+                <span lang="en">Bootstrap</span></span
+              >
+            </div>
+            <div class="col-4 text-right">
+              <a class="btn btn-danger" href="#" title="Excluir artigo"
+                ><i class="fa fa-trash"></i
+              ></a>
+              <a
+                class="btn btn-primary"
+                href="EditarArtigoDoUsuario.html"
+                title="Editar artigo"
+                ><i class="fa fa-edit"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card-body">
+          <div class="row">
+            <div class="col-lg-3">
+              <a href="ArtigoReact.html">
+                <img
+                  class="img-fluid rounded"
+                  src="images/bootstrap.png"
+                  alt="Imagem que insinua a fusão entre os logos do React e do Bootstrap"
+              /></a>
+            </div>
+
+            <div class="col-lg-9">
+              <p class="card-text preview-description-article">
+                Se você já trabalha com desenvolvimento web há alguns anos,
+                provavelmente se aproveitou bastante da era
+                <span lang="en">Bootstrap</span>. O
+                <span lang="en">framework web</span> mais famoso do mundo trouxe
+                várias facilidades para os programadores e continua sendo
+                relevante até hoje (confira o nosso
+                <span lang="en">e-book</span> sobre o tema). Entretanto, nos
+                últimos anos novas tecnologias apareceram e mudaram ainda mais a
+                forma como escrevemos nossas aplicações. Uma destas tecnologias
+                é o <span lang="en">React</span>, fruto do time de engenharia do
+                <span lang="en">Facebook</span>.
+              </p>
+              <a href="ArtigoReact.html" class="btn btn-primary"
+                >Visualizar Artigo &rarr;</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div component="components/footer.html"></div>
+
+    <!-- Modals -->
+
+    <!-- Search Modal -->
+    <div
+      class="modal fade modal-search modal-full"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalSearch"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row justify-content-md-center">
+              <div class="col-md-6 text-center">
+                <div class="col-12">
+                  <h5 class="modal-title h4" id="modalSearch">Pesquisar</h5>
+                </div>
+
+                <br />
+
+                <form
+                  action="/busca.html"
+                  method="GET"
+                  class="form-inline ml-auto"
+                >
+                  <div class="input-group mb-3 col-12">
+                    <input
+                      type="text"
+                      name="filtro"
+                      class="form-control"
+                      placeholder="Digite o que deseja buscar"
+                      aria-label="Digite o que deseja buscar"
+                      aria-describedby="button-addon2"
+                    />
+                    <div class="input-group-append">
+                      <button
+                        class="btn btn-outline-primary"
+                        type="submit"
+                        id="button-addon2"
+                      >
+                        <i class="fas fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+
+                <br />
+
+                <div>
+                  <div class="col-12">
+                    <p>Recomendados</p>
+                  </div>
+                  <div class="col-12">
+                    <a
+                      class="btn btn-primary"
+                      title="Ir para os artigos da categoria DevOps"
+                      href="/MenuDocker.html"
+                      role="button"
+                      ><span lang="en">Docker</span></a
+                    >
+                    <a
+                      class="btn btn-primary"
+                      title="Ir para os artigos da categoria Java"
+                      href="/MenuJava.html"
+                      role="button"
+                      >Java</a
+                    >
+                    <a
+                      class="btn btn-primary"
+                      title="Ir para os artigos da categoria NodeJs"
+                      href="/MenuNodeJS.html"
+                      role="button"
+                      ><span lang="en">Node.js</span></a
+                    >
+                  </div>
+                </div>
+
+                <br />
+
+                <div>
+                  <div class="col-12">
+                    <p>Mais acessados</p>
+                  </div>
+                  <div class="col-12">
+                    <a
+                      class="btn btn-primary"
+                      title="Ir para os artigos da categoria Java"
+                      href="/MenuJava.html"
+                      role="button"
+                      >Java</a
+                    >
+                    <a
+                      class="btn btn-primary"
+                      title="Ir para os artigos da categoria Python"
+                      href="/MenuPython.html"
+                      role="button"
+                      ><span lang="en">Python</span></a
+                    >
+                    <a
+                      class="btn btn-primary"
+                      title="Ir para os artigos da categoria NodeJs"
+                      href="/MenuNodeJS.html"
+                      role="button"
+                      ><span lang="en">Node.js</span></a
+                    >
+                  </div>
+                </div>
+
+                <br />
+
+                <div>
+                  <div class="col-12">
+                    <p>Histórico de acessos</p>
+                  </div>
+                  <div class="col-12">
+                    <a
+                      class="btn btn-primary"
+                      title="Ir para o artigo de Java"
+                      href="/ArtigoJava.html"
+                      role="button"
+                      >Java</a
+                    >
+                    <a
+                      class="btn btn-primary"
+                      title="Ir para o artigo de DevOps"
+                      href="/ArtigoDevOps.html"
+                      role="button"
+                      ><span lang="en">DevOps</span></a
+                    >
+                    <a
+                      class="btn btn-primary"
+                      title="Ir para o artigo de Frontend"
+                      href="/ArtigoReact.html"
+                      role="button"
+                      ><span lang="en">Frontend</span></a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div
+      class="modal fade modal-login modal-full"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalLogin"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row justify-content-md-center">
+              <div class="col-md-4">
+                <div class="col-12 text-center">
+                  <h5 class="modal-title h4" id="modalLogin">Entrar</h5>
+
+                  <br />
+
+                  <p>Informe o usuário e senha para entrar no sistema</p>
+                  <p>
+                    Não possui cadastro?
+                    <a
+                      href="#"
+                      title="Clique para criar um cadastro"
+                      data-toggle="modal"
+                      data-target=".modal-register"
+                      data-dismiss="modal"
+                      >Clique aqui para criar.</a
+                    >
+                  </p>
+                </div>
+
+                <br />
+
+                <div class="col-12 text-center">
+                  <img
+                    src="/images/avatar.png"
+                    width="100px"
+                    alt="Avatar símbolico de uma pessoa"
+                    class="rounded-circle"
+                  />
+                </div>
+
+                <br />
+
+                <form action="">
+                  <input type="hidden" name="authenticated" value="true" />
+                  <div class="form-group">
+                    <label for="emailField">E-mail</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="emailField"
+                      aria-describedby="emailHelp"
+                      placeholder="Digite o seu e-mail"
+                    />
+                    <small id="emailHelp" class="form-text text-muted"
+                      >Nós nunca compartilharemos seu e-mail com outra
+                      pessoa</small
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="passwordField">Senha</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="passwordField"
+                      placeholder="Digita a sua senha"
+                    />
+                  </div>
+                  <div class="form-group text-right">
+                    <a
+                      href="#"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                      >Cancelar</a
+                    >
+                    <button type="submit" class="btn btn-primary">
+                      Entrar
+                    </button>
+                  </div>
+
+                  <br />
+                  <div class="form-group text-center">
+                    <p>
+                      Esqueceu a sua senha?
+                      <a href="#" title="Clique para recuperar a sua senha"
+                        >Clique aqui para recuperá-la.</a
+                      >
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div
+      class="modal fade modal-register modal-full"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalRegister"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row justify-content-md-center">
+              <div class="col-md-6">
+                <div class="col-12 text-center">
+                  <h5 class="modal-title h4" id="modalRegister">Cadastre-se</h5>
+
+                  <p>Informe os dados abaixo para se cadastrar no sistema</p>
+                </div>
+
+                <br />
+
+                <form action="">
+                  <input type="hidden" name="authenticated" value="true" />
+
+                  <div class="form-group">
+                    <label for="emailField">E-mail</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="emailField"
+                      aria-describedby="emailHelp"
+                      placeholder="Digite o seu e-mail"
+                    />
+                    <small id="emailHelp" class="form-text text-muted"
+                      >Nós nunca compartilharemos seu e-mail com outra
+                      pessoa</small
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="passwordField">Senha</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="passwordField"
+                      placeholder="Digita a sua senha"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="rePasswordField">Confirmação de senha</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="rePasswordField"
+                      placeholder="Digita a confirmação de senha"
+                    />
+                  </div>
+                  <div class="form-group text-right">
+                    <a
+                      href="#"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                      >Cancelar</a
+                    >
+                    <button type="submit" class="btn btn-primary">
+                      Cadastrar
+                    </button>
+                  </div>
+
+                  <br />
+                  <div class="form-group text-center">
+                    <p>
+                      Já possui cadastro?
+                      <a
+                        href="#"
+                        title="Clique para entrar no sistema"
+                        data-toggle="modal"
+                        data-target=".modal-login"
+                        data-dismiss="modal"
+                        >Clique aqui para entrar no sistema.</a
+                      >
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/fontawesome/js/all.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>

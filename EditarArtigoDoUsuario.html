@@ -29,7 +29,7 @@
       <li class="breadcrumb-item">
         <a href="index.html">Home</a>
       </li>
-      <li class="breadcrumb-item active">Novo Artigo</li>
+      <li class="breadcrumb-item active">Editar Artigo</li>
     </ol>
 
     <div class="row"></div>
@@ -44,7 +44,7 @@
           <div class="control-group form-group">
             <div class="controls">
               <label for="title">Título:</label>
-              <input type="text" id="title" class="form-control" id="name" required
+              <input type="text" id="title" class="form-control" id="name" value="O que é Spring Boot?" required
                 data-validation-required-message="Please enter your name." />
               <p class="help-block"></p>
             </div>
@@ -57,10 +57,19 @@
                 artigo!</label>
             </div>
           </div>
+
+          <div class="row">
+            <div class="col-lg-3">
+              <img class="img-fluid rounded" src="images/SpringBoot.png" alt="Logo do framework spring boot" />
+            </div>
+          </div>
+
+          <br />
+
           <div class="form-group">
             <label for="exampleFormControlSelect2">Categoria</label>
             <select multiple class="form-control" id="exampleFormControlSelect2">
-              <option>Backend</option>
+              <option selected>Backend</option>
               <option>Frontend</option>
               <option>DevOps</option>
               <option>Banco de Dados</option>
@@ -73,7 +82,7 @@
               <label for="content">Conteúdo:</label>
               <textarea rows="10" id="content" cols="100" class="form-control" id="message" required
                 data-validation-required-message="Please enter your message" maxlength="999"
-                style="resize:none"></textarea>
+                style="resize:none">Muitas pessoas morrem de medo de terem que configurar uma aplicação do zero. Geralmente, são necessárias várias configurações para só então começar a codificar. Agora, imagine pular toda essa parte chata de configurações e criar um projeto onde você já tenha tudo o que precisa para começar uma aplicação. Muito bom, não é mesmo?</textarea>
             </div>
           </div>
           <div id="success"></div>
@@ -82,7 +91,7 @@
             <div class="col-12 text-right">
               <a href="#" class="btn btn-secondary" onclick="javascript:history.back()" aria-label="Close">Cancelar</a>
               <button type="submit" class="btn btn-primary" id="sendMessageButton">
-                Submeter Artigo
+                Editar Artigo
               </button>
             </div>
           </div>
