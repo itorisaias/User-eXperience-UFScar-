@@ -23,70 +23,83 @@
 
         <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
             <a href="#" class="navbar-brand"><span lang="en">UX</span> - Diretivas para Web</a>
-            <a href="#" class="navbar-brand"><span lang="en"> | </span></a>
-
+            <a href="#" class="navbar-brand d-none d-md-block"><span lang="en"> | </span></a>
+        
             <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
-
+        
+        
             <div class="collapse navbar-collapse" id="navbarCollapse">
-               <ul class="navbar-nav mr-auto">
+                <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
                         <a class="nav-link" href="index.html"><span lang="en">Home</span></a>
                     </li>
-
+        
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span lang="en">Backend</span></a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"><span lang="en">Backend</span></a>
                         <div class="dropdown-menu" aria-labelledby="dropdown07">
                             <a class="dropdown-item" href="MenuJava.html">Java</a>
                             <a class="dropdown-item" href="MenuNodeJS.html"><span lang="en">NodeJs</span></a>
                             <a class="dropdown-item" href="MenuPython.html"><span lang="en">Python</span></a>
                         </div>
                     </li>
-
+        
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span lang="en">Frontend</span></a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"><span lang="en">Frontend</span></a>
                         <div class="dropdown-menu" aria-labelledby="dropdown07">
                             <a class="dropdown-item" href="MenuReact.html"><span lang="en">React</span></a>
                         </div>
                     </li>
-
+        
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span lang="en">DevOps</span></a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"><span lang="en">DevOps</span></a>
                         <div class="dropdown-menu" aria-labelledby="dropdown07">
                             <a class="dropdown-item" href="MenuDocker.html"><span lang="en">Docker</span></a>
                         </div>
                     </li>
-
+        
                     <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span lang="en">Database</span></a>
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false"><span lang="en">Database</span></a>
                         <div class="dropdown-menu" aria-labelledby="dropdown07">
                             <a class="dropdown-item" href="MenuMongo.html"><span lang="en">MongoDB</span></a>
                             <a class="dropdown-item" href="MenuPostegre.html"><span lang="en">PostgreSQL</span></a>
                         </div>
                     </li>
-                </ul>              
-
-                <ul class="navbar-nav ml-auto nav-flex-icons">                    
-                    <li  class="nav-item">
-                        <form class="form-inline ml-auto">
-                            <input type="text" class="form-control mr-sm-2" placeholder="Pesquisar">
-                        </form>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-user"></i>
+                </ul>
+        
+                <ul class="navbar-nav ml-auto nav-flex-icons">
+                    <li class="nav-item">
+                        <a class="nav-link " href="#" data-toggle="modal" data-target=".modal-search">
+                            <i class="fas fa-search"></i>
                         </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
-                            <a class="dropdown-item" href="#">Entrar</a>
-                            <a class="dropdown-item" href="#">Cadastre-se</a>
+                    </li>
+        
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user"></i>
+                            <span class="authenticated d-none">Usuário</span>
+                        </a>
+                        <div class="unauthenticated dropdown-menu dropdown-menu-right dropdown-default"
+                            aria-labelledby="navbarDropdownMenuLink-333">
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target=".modal-login">Entrar</a>
+                            <a class="dropdown-item" href="#" data-toggle="modal" data-target=".modal-register">Cadastre-se</a>
+                        </div>
+        
+                        <div class="authenticated d-none dropdown-menu dropdown-menu-right dropdown-default"
+                            aria-labelledby="navbarDropdownMenuLink-333">
+                            <a class="dropdown-item" href="?authenticated=false" title="Clique para sair">Sair</a>
                         </div>
                     </li>
                 </ul>
             </div>
         </nav>
+
 
         <!-- Page Content -->
         <div class="container">
@@ -217,11 +230,226 @@
             </div>
         </footer>
 
+        <!-- Modals -->
+        
+        <!-- Search Modal -->
+        <div class="modal fade modal-search modal-full" tabindex="-1" role="dialog" aria-labelledby="modalSearch"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-6 text-center">
+                                <div class="col-12">
+                                    <h5 class="modal-title h4" id="modalSearch">Pesquisar</h5>
+                                </div>
+        
+                                <br />
+        
+                                <form action="/busca.html" method="GET" class="form-inline ml-auto">
+                                    <div class="input-group mb-3 col-12">
+                                        <input type="text" name="filtro" class="form-control"
+                                            placeholder="Digite o que deseja buscar" aria-label="Digite o que deseja buscar"
+                                            aria-describedby="button-addon2">
+                                        <div class="input-group-append">
+                                            <button class="btn btn-outline-primary" type="submit" id="button-addon2"><i
+                                                    class="fas fa-search"></i></button>
+                                        </div>
+                                    </div>
+                                </form>
+        
+                                <br />
+        
+                                <div>
+                                    <div class="col-12">
+                                        <p>Recomendados</p>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="btn btn-primary" title="Ir para os artigos da categoria DevOps"
+                                            href="/MenuDocker.html" role="button">Docker</a>
+                                        <a class="btn btn-primary" title="Ir para os artigos da categoria Java"
+                                            href="/MenuJava.html" role="button">Java</a>
+                                        <a class="btn btn-primary" title="Ir para os artigos da categoria NodeJs"
+                                            href="/MenuNodeJS.html" role="button">Node.js</a>
+                                    </div>
+                                </div>
+        
+                                <br />
+        
+                                <div>
+                                    <div class="col-12">
+                                        <p>Mais acessados</p>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="btn btn-primary" title="Ir para os artigos da categoria Java"
+                                            href="/MenuJava.html" role="button">Java</a>
+                                        <a class="btn btn-primary" title="Ir para os artigos da categoria Python"
+                                            href="/MenuPython.html" role="button">Python</a>
+                                        <a class="btn btn-primary" title="Ir para os artigos da categoria NodeJs"
+                                            href="/MenuNodeJS.html" role="button">Node.js</a>
+                                    </div>
+                                </div>
+        
+                                <br />
+        
+                                <div>
+                                    <div class="col-12">
+                                        <p>Histórico de acessos</p>
+                                    </div>
+                                    <div class="col-12">
+                                        <a class="btn btn-primary" title="Ir para o artigo de Java" href="/ArtigoJava.html"
+                                            role="button">Java</a>
+                                        <a class="btn btn-primary" title="Ir para o artigo de DevOps" href="/ArtigoDevOps.html"
+                                            role="button">DevOps</a>
+                                        <a class="btn btn-primary" title="Ir para o artigo de Frontend" href="/ArtigoReact.html"
+                                            role="button">Frontend</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Login Modal -->
+        <div class="modal fade modal-login modal-full" tabindex="-1" role="dialog" aria-labelledby="modalLogin"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-4">
+                                <div class="col-12 text-center">
+                                    <h5 class="modal-title h4" id="modalLogin">Entrar</h5>
+        
+                                    <br />
+        
+                                    <p>Informe o usuário e senha para entrar no sistema</p>
+                                    <p>Não possui cadastro? <a href="#" title="Clique para criar um cadastro"
+                                            data-toggle="modal" data-target=".modal-register" data-dismiss="modal">Clique aqui
+                                            para criar.</a></p>
+                                </div>
+        
+                                <br />
+        
+                                <div class="col-12 text-center">
+                                    <img src="/images/avatar.png" width="100px" alt="Avatar símbolico de uma pessoa"
+                                        class="rounded-circle">
+                                </div>
+        
+                                <br />
+        
+                                <form action="">
+                                    <input type="hidden" name="authenticated" value="true" />
+                                    <div class="form-group">
+                                        <label for="emailField">E-mail</label>
+                                        <input type="email" class="form-control" id="emailField" aria-describedby="emailHelp"
+                                            placeholder="Digite o seu e-mail">
+                                        <small id="emailHelp" class="form-text text-muted">Nós nunca compartilharemos seu e-mail
+                                            com outra pessoa</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="passwordField">Senha</label>
+                                        <input type="password" class="form-control" id="passwordField"
+                                            placeholder="Digita a sua senha">
+                                    </div>
+                                    <div class="form-group text-right">
+                                        <a href="#" class="btn btn-secondary" data-dismiss="modal"
+                                            aria-label="Close">Cancelar</a>
+                                        <button type="submit" class="btn btn-primary">Entrar</button>
+                                    </div>
+        
+                                    <br />
+                                    <div class="form-group text-center">
+                                        <p>Esqueceu a sua senha? <a href="#" title="Clique para recuperar a sua senha">Clique
+                                                aqui para recuperá-la.</a></p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Register Modal -->
+        <div class="modal fade modal-register modal-full" tabindex="-1" role="dialog" aria-labelledby="modalRegister"
+            aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">×</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row justify-content-md-center">
+                            <div class="col-md-6">
+                                <div class="col-12 text-center">
+                                    <h5 class="modal-title h4" id="modalRegister">Cadastre-se</h5>
+        
+                                    <p>Informe os dados abaixo para se cadastrar no sistema</p>
+                                </div>
+        
+                                <br />
+        
+                                <form action="">
+                                    <input type="hidden" name="authenticated" value="true" />
+        
+                                    <div class="form-group">
+                                        <label for="emailField">E-mail</label>
+                                        <input type="email" class="form-control" id="emailField" aria-describedby="emailHelp"
+                                            placeholder="Digite o seu e-mail">
+                                        <small id="emailHelp" class="form-text text-muted">Nós nunca compartilharemos seu e-mail
+                                            com outra pessoa</small>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="passwordField">Senha</label>
+                                        <input type="password" class="form-control" id="passwordField"
+                                            placeholder="Digita a sua senha">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="rePasswordField">Confirmação de senha</label>
+                                        <input type="password" class="form-control" id="rePasswordField"
+                                            placeholder="Digita a confirmação de senha">
+                                    </div>
+                                    <div class="form-group text-right">
+                                        <a href="#" class="btn btn-secondary" data-dismiss="modal"
+                                            aria-label="Close">Cancelar</a>
+                                        <button type="submit" class="btn btn-primary">Cadastrar</button>
+                                    </div>
+        
+                                    <br />
+                                    <div class="form-group text-center">
+                                        <p>Já possui cadastro? <a href="#" title="Clique para entrar no sistema"
+                                                data-toggle="modal" data-target=".modal-login" data-dismiss="modal">Clique aqui
+                                                para entrar no sistema.</a></p>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Bootstrap core JavaScript -->
         <script src="vendor/jquery/jquery.min.js"></script>
         <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="vendor/fontawesome/js/all.js"></script>
 
+        <script src="js/authentication.js"></script>
     </body>
 
 </html>

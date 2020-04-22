@@ -1,104 +1,194 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
 
-    <head>
+    <title>UX - Diretivas para Web</title>
 
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-      <meta name="description" content="">
-      <meta name="author" content="">
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="vendor/fontawesome/css/all.css" rel="stylesheet" />
 
-      <title>UX - Diretivas para Web</title>
+    <!-- Custom styles for this template -->
+    <link href="css/ux.css" rel="stylesheet" />
+  </head>
 
-      <!-- Bootstrap core CSS -->
-      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-      <link href="vendor/fontawesome/css/all.css" rel="stylesheet">
+  <body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+      <a href="#" class="navbar-brand"
+        ><span lang="en">UX</span> - Diretivas para Web</a
+      >
+      <a href="#" class="navbar-brand d-none d-md-block"
+        ><span lang="en"> | </span></a
+      >
 
-      <!-- Custom styles for this template -->
-      <link href="css/ux.css" rel="stylesheet">
+      <button
+        type="button"
+        class="navbar-toggler"
+        data-toggle="collapse"
+        data-target="#navbarCollapse"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    </head>
+      <div class="collapse navbar-collapse" id="navbarCollapse">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html"
+              ><span lang="en">Home</span></a
+            >
+          </li>
 
-    <body>
-
-        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
-            <a href="#" class="navbar-brand"><span lang="en">UX</span> - Diretivas para Web</a>
-            <a href="#" class="navbar-brand"><span lang="en"> | </span></a>
-
-            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-               <ul class="navbar-nav mr-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#"><span lang="en">Home</span></a>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span lang="en">Backend</span></a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown07">
-                            <a class="dropdown-item" href="#">Java</a>
-                            <a class="dropdown-item" href="#"><span lang="en">NodeJs</span></a>
-                            <a class="dropdown-item" href="#"><span lang="en">Phyton</span></a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span lang="en">Frontend</span></a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown07">
-                            <a class="dropdown-item" href="#"><span lang="en">React</span></a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span lang="en">DevOps</span></a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown07">
-                            <a class="dropdown-item" href="#"><span lang="en">Docker</span></a>
-                        </div>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span lang="en">Database</span></a>
-                        <div class="dropdown-menu" aria-labelledby="dropdown07">
-                            <a class="dropdown-item" href="#"><span lang="en">MongoDB</span></a>
-                            <a class="dropdown-item" href="#"><span lang="en">PostgreSQL</span></a>
-                        </div>
-                    </li>
-                </ul>              
-
-                <ul class="navbar-nav ml-auto nav-flex-icons">                    
-                    <li  class="nav-item">
-                        <form class="form-inline ml-auto">
-                            <input type="text" class="form-control mr-sm-2" placeholder="Pesquisar">
-                        </form>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <i class="fas fa-user"></i>
-                        </a>
-                        <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
-                            <a class="dropdown-item" href="#">Entrar</a>
-                            <a class="dropdown-item" href="#">Cadastre-se</a>
-                        </div>
-                    </li>
-                </ul>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdown07"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              ><span lang="en">Backend</span></a
+            >
+            <div class="dropdown-menu" aria-labelledby="dropdown07">
+              <a class="dropdown-item" href="MenuJava.html">Java</a>
+              <a class="dropdown-item" href="MenuNodeJS.html"
+                ><span lang="en">NodeJs</span></a
+              >
+              <a class="dropdown-item" href="MenuPython.html"
+                ><span lang="en">Python</span></a
+              >
             </div>
-        </nav>
+          </li>
 
-        <!-- Page Content -->
-        <div class="container">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdown07"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              ><span lang="en">Frontend</span></a
+            >
+            <div class="dropdown-menu" aria-labelledby="dropdown07">
+              <a class="dropdown-item" href="MenuReact.html"
+                ><span lang="en">React</span></a
+              >
+            </div>
+          </li>
 
-        <!-- Page Heading/Breadcrumbs -->
-    <h1 class="mt-4 mb-3">
-        <small> O que é Spring Boot?
-          
-        </small>    
-    </h1>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdown07"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              ><span lang="en">DevOps</span></a
+            >
+            <div class="dropdown-menu" aria-labelledby="dropdown07">
+              <a class="dropdown-item" href="MenuDocker.html"
+                ><span lang="en">Docker</span></a
+              >
+            </div>
+          </li>
 
-    <ol class="breadcrumb">
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="dropdown07"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              ><span lang="en">Database</span></a
+            >
+            <div class="dropdown-menu" aria-labelledby="dropdown07">
+              <a class="dropdown-item" href="MenuMongo.html"
+                ><span lang="en">MongoDB</span></a
+              >
+              <a class="dropdown-item" href="MenuPostegre.html"
+                ><span lang="en">PostgreSQL</span></a
+              >
+            </div>
+          </li>
+        </ul>
+
+        <ul class="navbar-nav ml-auto nav-flex-icons">
+          <li class="nav-item">
+            <a
+              class="nav-link "
+              href="#"
+              data-toggle="modal"
+              data-target=".modal-search"
+            >
+              <i class="fas fa-search"></i>
+            </a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdownMenuLink-333"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              <i class="fas fa-user"></i>
+              <span class="authenticated d-none">Usuário</span>
+            </a>
+            <div
+              class="unauthenticated dropdown-menu dropdown-menu-right dropdown-default"
+              aria-labelledby="navbarDropdownMenuLink-333"
+            >
+              <a
+                class="dropdown-item"
+                href="#"
+                data-toggle="modal"
+                data-target=".modal-login"
+                >Entrar</a
+              >
+              <a
+                class="dropdown-item"
+                href="#"
+                data-toggle="modal"
+                data-target=".modal-register"
+                >Cadastre-se</a
+              >
+            </div>
+
+            <div
+              class="authenticated d-none dropdown-menu dropdown-menu-right dropdown-default"
+              aria-labelledby="navbarDropdownMenuLink-333"
+            >
+              <a
+                class="dropdown-item"
+                href="?authenticated=false"
+                title="Clique para sair"
+                >Sair</a
+              >
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+      <!-- Page Heading/Breadcrumbs -->
+      <h1 class="mt-4 mb-3">
+        <small> O que é Spring Boot? </small>
+      </h1>
+
+      <ol class="breadcrumb">
         <li class="breadcrumb-item">
           <a href="index.html">Home</a>
         </li>
@@ -106,37 +196,42 @@
       </ol>
 
       <div class="row">
-
         <!-- Post Content Column -->
         <div class="col-lg-8">
-  
           <!-- Preview Image -->
-          <img class="img-fluid rounded" src="images/SpringBoot.png" alt="">
-  
-          <hr>
-  
-          <!-- Date/Time -->                 
-          <p>Escrito por Marcelo Afonso em 02/02/2020 </p>
-  
-          <hr>
-  
+          <img class="img-fluid rounded" src="images/SpringBoot.png" alt="" />
+
+          <hr />
+
+          <!-- Date/Time -->
+          <p>Escrito por Marcelo Afonso em 02/02/2020</p>
+
+          <hr />
+
           <!-- Post Content -->
-          <p class="lead">O Spring Boot é um projeto da Spring que veio para facilitar o processo de configuração e publicação de nossas aplicações. A intenção é ter o seu projeto rodando o mais rápido possível e sem complicação.
+          <p class="lead">
+            O Spring Boot é um projeto da Spring que veio para facilitar o
+            processo de configuração e publicação de nossas aplicações. A
+            intenção é ter o seu projeto rodando o mais rápido possível e sem
+            complicação. Ele consegue isso favorecendo a convenção sobre a
+            configuração. Basta que você diga pra ele quais módulos deseja
+            utilizar (WEB, Template, Persistência, Segurança, etc.) que ele vai
+            reconhecer e configurar. Você escolhe os módulos que deseja através
+            dos starters que inclui no pom.xml do seu projeto.
+          </p>
 
-            Ele consegue isso favorecendo a convenção sobre a configuração. Basta que você diga pra ele quais módulos deseja utilizar (WEB, Template, Persistência, Segurança, etc.) que ele vai reconhecer e configurar.
-            
-            Você escolhe os módulos que deseja através dos starters que inclui no pom.xml do seu projeto.</p>
-         
-         <p class="lead"> Eles, basicamente, são dependências que agrupam outras dependências. Inclusive, como temos esse grupo de dependências representadas pelo starter, nosso pom.xml acaba por ficar mais organizado.
-                
-            Apesar do Spring Boot, através da convenção, já deixar tudo configurado, nada impede que você crie as suas customizações caso sejam necessárias.
-                
-            O maior benefício do Spring Boot é que ele nos deixa mais livres para pensarmos nas regras de negócio da nossa aplicação.</p>
-  
+          <p class="lead">
+            Eles, basicamente, são dependências que agrupam outras dependências.
+            Inclusive, como temos esse grupo de dependências representadas pelo
+            starter, nosso pom.xml acaba por ficar mais organizado. Apesar do
+            Spring Boot, através da convenção, já deixar tudo configurado, nada
+            impede que você crie as suas customizações caso sejam necessárias. O
+            maior benefício do Spring Boot é que ele nos deixa mais livres para
+            pensarmos nas regras de negócio da nossa aplicação.
+          </p>
 
-          
-          <hr>
-  
+          <hr />
+
           <!-- Comments Form -->
           <div class="card my-4">
             <h5 class="card-header">Deixe um comentario:</h5>
@@ -149,44 +244,54 @@
               </form>
             </div>
           </div>
-  
+
           <!-- Single Comment -->
           <div class="media mb-4">
-            <img class="d-flex mr-3 rounded-circle" src="images/user4.png" alt="">
+            <img
+              class="d-flex mr-3 rounded-circle"
+              src="images/user4.png"
+              alt=""
+            />
             <div class="media-body">
               <h5 class="mt-0">Sergio Cazu</h5>
               Eu já trabalhei com Spring MVC, mas até o momento ainda não tinha
-              visto nada sobre o Spring Boot. Com esse artigo, deu para ter uma noção
-              do ganho de produtividade que é obtido utilizando o mesmo! Parabéns
-              pela objetividade do artigo e organização do mesmo!Obrigado!
+              visto nada sobre o Spring Boot. Com esse artigo, deu para ter uma
+              noção do ganho de produtividade que é obtido utilizando o mesmo!
+              Parabéns pela objetividade do artigo e organização do
+              mesmo!Obrigado!
             </div>
           </div>
-  
+
           <!-- Comment with nested comments -->
           <div class="media mb-4">
-            <img class="d-flex mr-3 rounded-circle" src="images/user2.png" alt="">
+            <img
+              class="d-flex mr-3 rounded-circle"
+              src="images/user2.png"
+              alt=""
+            />
             <div class="media-body">
               <h5 class="mt-0">Mario Celso</h5>
-              Alexandre, teria como fazer um artigo mostrando como criar um sistema de autenticação e autorização com jwt e o Spring Boot?
+              Alexandre, teria como fazer um artigo mostrando como criar um
+              sistema de autenticação e autorização com jwt e o Spring Boot?
               <div class="media mt-4">
-                <img class="d-flex mr-3 rounded-circle" src="images/user3.png" alt="">
+                <img
+                  class="d-flex mr-3 rounded-circle"
+                  src="images/user3.png"
+                  alt=""
+                />
                 <div class="media-body">
                   <h5 class="mt-0">Alexandre Afonso</h5>
-                  Olá Mario Celso!
-                  Bacana esse tema pra um conteúdo. Anoitei o tema aqui para podermos considerar nos próximos conteúdos que planejarmos criar.
-                  Abraço.
-                  </div>
-              </div>    
-  
+                  Olá Mario Celso! Bacana esse tema pra um conteúdo. Anoitei o
+                  tema aqui para podermos considerar nos próximos conteúdos que
+                  planejarmos criar. Abraço.
+                </div>
+              </div>
             </div>
           </div>
-  
         </div>
-  
+
         <!-- Sidebar Widgets Column -->
         <div class="col-md-4">
-  
-          
           <!-- Categories Widget -->
           <div class="card my-4">
             <h5 class="card-header">Categorias</h5>
@@ -221,109 +326,481 @@
               </div>
             </div>
           </div>
-  
+
           <!-- Side Widget -->
           <div class="card my-4">
             <h5 class="card-header">Dicas do Autor</h5>
             <div class="card-body">
-                Se você gostou do que viu nesse artigo, então imagino que vai gostar muito também do nosso e-book Produtividade no Desenvolvimento de Aplicações Web Com Spring Boot
+              Se você gostou do que viu nesse artigo, então imagino que vai
+              gostar muito também do nosso e-book Produtividade no
+              Desenvolvimento de Aplicações Web Com Spring Boot
             </div>
           </div>
-  
         </div>
-  
       </div>
       <!-- /.row -->
-            
-            
+    </div>
 
-        
+    <footer class="page-footer font-small text-light pt-4 bg-dark">
+      <div class="container text-center text-md-left">
+        <div class="row text-center text-md-left mt-3 pb-3">
+          <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">
+              <span lang="en">UX</span> - Diretivas para Web
+            </h6>
+            <p>
+              Esta é uma plataforma agregadora de conteúdo ligando profissionais
+              experientes a iniciantes
+            </p>
+          </div>
 
+          <hr class="w-100 clearfix d-md-none" />
+
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold"></h6>
+            <p><a href="#">Backend</a></p>
+            <p><a href="#">Frontend</a></p>
+            <p><a href="#">DevOps</a></p>
+            <p><a href="#">Database</a></p>
+          </div>
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold"></h6>
+            <p><a href="#">Cadastre-se</a></p>
+          </div>
+
+          <hr class="w-100 clearfix d-md-none" />
+
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+            <h6 class="text-uppercase mb-4 font-weight-bold">Contato</h6>
+            <p><i class="fas fa-home mr-3"></i>R. ABC, São Carlos</p>
+            <p><i class="fas fa-envelope mr-3"></i> contato@dominio.com</p>
+            <p><i class="fas fa-phone mr-3"></i> (99) 9999-9999</p>
+            <p></p>
+          </div>
         </div>
 
+        <hr />
 
-        <footer class="page-footer font-small text-light pt-4 bg-dark">
-            <div class="container text-center text-md-left">
-                <div class="row text-center text-md-left mt-3 pb-3">
-                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold"> <span lang="en">UX</span> - Diretivas para Web </h6>
-                        <p>Esta é uma plataforma agregadora de conteúdo ligando profissionais experientes a iniciantes</p>
-                    </div>
+        <div class="row d-flex align-items-center">
+          <div class="col-md-7 col-lg-8">
+            <p class="text-center text-md-left">
+              © 2020 <span lang="en">Copyright</span>:
+              <a href="#"
+                ><strong>
+                  <span lang="en">UX</span> - Diretivas para Web</strong
+                ></a
+              >
+            </p>
+          </div>
 
-                    <hr class="w-100 clearfix d-md-none">
+          <div class="col-md-5 col-lg-4 ml-lg-0">
+            <div class="text-center text-md-right">
+              <ul class="list-unstyled list-inline">
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
 
-                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold"></h6>
-                        <p><a href="#">Backend</a></p>
-                        <p><a href="#">Frontend</a></p>
-                        <p><a href="#">DevOps</a></p>
-                        <p><a href="#">Database</a></p>
-                    </div>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-twitter"></i>
+                  </a>
+                </li>
 
-                    <hr class="w-100 clearfix d-md-none">
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-google-plus-g"></i>
+                  </a>
+                </li>
 
-                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold"></h6>
-                        <p><a href="#">Cadastre-se</a></p>
-                    </div>
-
-                    <hr class="w-100 clearfix d-md-none">
-
-                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
-                        <h6 class="text-uppercase mb-4 font-weight-bold">Contato</h6>
-                        <p><i class="fas fa-home mr-3"></i>R. ABC, São Carlos</p>
-                        <p><i class="fas fa-envelope mr-3"></i> contato@dominio.com</p>
-                        <p><i class="fas fa-phone mr-3"></i> (99) 9999-9999</p>
-                        <p></p>
-                    </div>
-                </div>
-
-                <hr>
-
-                <div class="row d-flex align-items-center">
-                    <div class="col-md-7 col-lg-8">
-                        <p class="text-center text-md-left">© 2020 <span lang="en">Copyright</span>: <a href="#"><strong> <span lang="en">UX</span> - Diretivas para Web</strong></a></p>
-                    </div>
-                   
-                    <div class="col-md-5 col-lg-4 ml-lg-0">                    
-                        <div class="text-center text-md-right">
-                            <ul class="list-unstyled list-inline">
-                                <li class="list-inline-item">
-                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                                        <i class="fab fa-facebook-f"></i>
-                                    </a>
-                                </li>
-
-                                <li class="list-inline-item">
-                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                </li>
-
-                                <li class="list-inline-item">
-                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                                        <i class="fab fa-google-plus-g"></i>
-                                    </a>
-                                </li>
-
-                                <li class="list-inline-item">
-                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-
-                    </div>
-                </div>
+                <li class="list-inline-item">
+                  <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                    <i class="fab fa-linkedin-in"></i>
+                  </a>
+                </li>
+              </ul>
             </div>
-        </footer>
+          </div>
+        </div>
+      </div>
+    </footer>
 
-        <!-- Bootstrap core JavaScript -->
-        <script src="vendor/jquery/jquery.min.js"></script>
-        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-        <script src="vendor/fontawesome/js/all.js"></script>
+    <!-- Modals -->
 
-    </body>
+    <!-- Search Modal -->
+    <div
+      class="modal fade modal-search modal-full"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalSearch"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row justify-content-md-center">
+              <div class="col-md-6 text-center">
+                <div class="col-12">
+                  <h5 class="modal-title h4" id="modalSearch">Pesquisar</h5>
+                </div>
 
+                <br />
+
+                <form
+                  action="/busca.html"
+                  method="GET"
+                  class="form-inline ml-auto"
+                >
+                  <div class="input-group mb-3 col-12">
+                    <input
+                      type="text"
+                      name="filtro"
+                      class="form-control"
+                      placeholder="Digite o que deseja buscar"
+                      aria-label="Digite o que deseja buscar"
+                      aria-describedby="button-addon2"
+                    />
+                    <div class="input-group-append">
+                      <button
+                        class="btn btn-outline-primary"
+                        type="submit"
+                        id="button-addon2"
+                      >
+                        <i class="fas fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+
+                <br />
+
+                <div>
+                  <div class="col-12">
+                    <p>Recomendados</p>
+                  </div>
+                  <div class="col-12">
+                    <a
+                      class="btn btn-primary"
+                      title="Ir para os artigos da categoria DevOps"
+                      href="/MenuDocker.html"
+                      role="button"
+                      >Docker</a
+                    >
+                    <a
+                      class="btn btn-primary"
+                      title="Ir para os artigos da categoria Java"
+                      href="/MenuJava.html"
+                      role="button"
+                      >Java</a
+                    >
+                    <a
+                      class="btn btn-primary"
+                      title="Ir para os artigos da categoria NodeJs"
+                      href="/MenuNodeJS.html"
+                      role="button"
+                      >Node.js</a
+                    >
+                  </div>
+                </div>
+
+                <br />
+
+                <div>
+                  <div class="col-12">
+                    <p>Mais acessados</p>
+                  </div>
+                  <div class="col-12">
+                    <a
+                      class="btn btn-primary"
+                      title="Ir para os artigos da categoria Java"
+                      href="/MenuJava.html"
+                      role="button"
+                      >Java</a
+                    >
+                    <a
+                      class="btn btn-primary"
+                      title="Ir para os artigos da categoria Python"
+                      href="/MenuPython.html"
+                      role="button"
+                      >Python</a
+                    >
+                    <a
+                      class="btn btn-primary"
+                      title="Ir para os artigos da categoria NodeJs"
+                      href="/MenuNodeJS.html"
+                      role="button"
+                      >Node.js</a
+                    >
+                  </div>
+                </div>
+
+                <br />
+
+                <div>
+                  <div class="col-12">
+                    <p>Histórico de acessos</p>
+                  </div>
+                  <div class="col-12">
+                    <a
+                      class="btn btn-primary"
+                      title="Ir para o artigo de Java"
+                      href="/ArtigoJava.html"
+                      role="button"
+                      >Java</a
+                    >
+                    <a
+                      class="btn btn-primary"
+                      title="Ir para o artigo de DevOps"
+                      href="/ArtigoDevOps.html"
+                      role="button"
+                      >DevOps</a
+                    >
+                    <a
+                      class="btn btn-primary"
+                      title="Ir para o artigo de Frontend"
+                      href="/ArtigoReact.html"
+                      role="button"
+                      >Frontend</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div
+      class="modal fade modal-login modal-full"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalLogin"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row justify-content-md-center">
+              <div class="col-md-4">
+                <div class="col-12 text-center">
+                  <h5 class="modal-title h4" id="modalLogin">Entrar</h5>
+
+                  <br />
+
+                  <p>Informe o usuário e senha para entrar no sistema</p>
+                  <p>
+                    Não possui cadastro?
+                    <a
+                      href="#"
+                      title="Clique para criar um cadastro"
+                      data-toggle="modal"
+                      data-target=".modal-register"
+                      data-dismiss="modal"
+                      >Clique aqui para criar.</a
+                    >
+                  </p>
+                </div>
+
+                <br />
+
+                <div class="col-12 text-center">
+                  <img
+                    src="/images/avatar.png"
+                    width="100px"
+                    alt="Avatar símbolico de uma pessoa"
+                    class="rounded-circle"
+                  />
+                </div>
+
+                <br />
+
+                <form action="">
+                  <input type="hidden" name="authenticated" value="true" />
+                  <div class="form-group">
+                    <label for="emailField">E-mail</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="emailField"
+                      aria-describedby="emailHelp"
+                      placeholder="Digite o seu e-mail"
+                    />
+                    <small id="emailHelp" class="form-text text-muted"
+                      >Nós nunca compartilharemos seu e-mail com outra
+                      pessoa</small
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="passwordField">Senha</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="passwordField"
+                      placeholder="Digita a sua senha"
+                    />
+                  </div>
+                  <div class="form-group text-right">
+                    <a
+                      href="#"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                      >Cancelar</a
+                    >
+                    <button type="submit" class="btn btn-primary">
+                      Entrar
+                    </button>
+                  </div>
+
+                  <br />
+                  <div class="form-group text-center">
+                    <p>
+                      Esqueceu a sua senha?
+                      <a href="#" title="Clique para recuperar a sua senha"
+                        >Clique aqui para recuperá-la.</a
+                      >
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Register Modal -->
+    <div
+      class="modal fade modal-register modal-full"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalRegister"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row justify-content-md-center">
+              <div class="col-md-6">
+                <div class="col-12 text-center">
+                  <h5 class="modal-title h4" id="modalRegister">Cadastre-se</h5>
+
+                  <p>Informe os dados abaixo para se cadastrar no sistema</p>
+                </div>
+
+                <br />
+
+                <form action="">
+                  <input type="hidden" name="authenticated" value="true" />
+
+                  <div class="form-group">
+                    <label for="emailField">E-mail</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="emailField"
+                      aria-describedby="emailHelp"
+                      placeholder="Digite o seu e-mail"
+                    />
+                    <small id="emailHelp" class="form-text text-muted"
+                      >Nós nunca compartilharemos seu e-mail com outra
+                      pessoa</small
+                    >
+                  </div>
+                  <div class="form-group">
+                    <label for="passwordField">Senha</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="passwordField"
+                      placeholder="Digita a sua senha"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="rePasswordField">Confirmação de senha</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="rePasswordField"
+                      placeholder="Digita a confirmação de senha"
+                    />
+                  </div>
+                  <div class="form-group text-right">
+                    <a
+                      href="#"
+                      class="btn btn-secondary"
+                      data-dismiss="modal"
+                      aria-label="Close"
+                      >Cancelar</a
+                    >
+                    <button type="submit" class="btn btn-primary">
+                      Cadastrar
+                    </button>
+                  </div>
+
+                  <br />
+                  <div class="form-group text-center">
+                    <p>
+                      Já possui cadastro?
+                      <a
+                        href="#"
+                        title="Clique para entrar no sistema"
+                        data-toggle="modal"
+                        data-target=".modal-login"
+                        data-dismiss="modal"
+                        >Clique aqui para entrar no sistema.</a
+                      >
+                    </p>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/fontawesome/js/all.js"></script>
+
+    <script src="js/authentication.js"></script>
+  </body>
 </html>

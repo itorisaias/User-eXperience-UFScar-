@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>UX - Diretivas para Web</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="vendor/fontawesome/css/all.css" rel="stylesheet" />
+
+    <!-- Custom styles for this template -->
+    <link href="css/ux.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Search Modal -->
+    <div
+      class="modal fade modal-search modal-full d-block show"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="modalSearch"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close close-search" aria-label="Close">
+              <span aria-hidden="true">×</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="row justify-content-md-center">
+              <div class="col-md-6 text-center">
+                <div class="col-12">
+                  <h1 class="modal-title h4" id="modalSearch">Pesquisar</h1>
+                </div>
+
+                <br />
+
+                <form
+                  action="/busca.html"
+                  method="GET"
+                  class="form-inline ml-auto"
+                >
+                  <div class="input-group mb-3 col-12">
+                    <input
+                      type="text"
+                      name="filtro"
+                      class="form-control filter-field"
+                      placeholder="Digite o que deseja buscar"
+                      aria-label="Digite o que deseja buscar"
+                      aria-describedby="button-addon2"
+                    />
+                    <div class="input-group-append">
+                      <button
+                        class="btn btn-outline-primary"
+                        type="submit"
+                        id="button-addon2"
+                      >
+                        <i class="fas fa-search"></i>
+                      </button>
+                    </div>
+                  </div>
+                </form>
+
+                <br />
+
+                <h2 class="card-title h4" id="modalSearch">Resultado da busca:</h2>
+
+                <br />
+
+                <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        
+                        <div class="col-lg-6">
+                            <a href="/ArtigoJava.html"> <img class="img-fluid rounded" src="images/SpringBoot.png" alt="Logo do SpringBoot"></a>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <h3 class="card-title h4">O que é Spring Boot?</h3>
+                            <p class="card-text">Muitas pessoas morrem de medo de terem que configurar uma aplicação do zero...</p>
+                            <a href="/ArtigoJava.html" class="btn btn-primary">Continuar Leitura &rarr;</a>
+                        </div>
+
+                    </div>
+                </div>                
+                <div class="card-footer text-muted">                  
+                    Escrito em 02/02/2020 por <a href="#">Alexandre Afonso</a>
+                </div>
+            </div>
+
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        
+
+                        <div class="col-lg-6">
+                            <h3 class="card-title h4">Como construir uma aplicação com Docker?</h3>
+                            <p class="card-text">Podemos dizer que as palavras chaves para o Docker são: construir, entregar... 
+
+                            </p>
+                            <a href="/ArtigoDevOps.html" class="btn btn-primary">Continuar Leitura &rarr;</a>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <a href="/ArtigoDevOps.html"> <img class="img-fluid rounded" src="images/docker.png" alt="Imagem de containers em um porto"></a>                            
+                        </div>
+                    </div>
+                </div>                
+                <div class="card-footer text-muted">
+                    Escrito em 19/02/2020 por <a href="#">Caio Ortega</a>
+                    
+                </div>
+            </div>
+
+            <div class="card mb-4">
+                <div class="card-body">
+                    <div class="row">
+                        
+                        <div class="col-lg-6">
+                            <a href="/ArtigoReact.html"> <img class="img-fluid rounded" src="images/bootstrap.png" alt="Imagem de dois personagens do Dragon Ball Z fazendo fusão com as logos do React e Bootstrap em suas faces respectivamente."></a>
+                        </div>
+
+                        <div class="col-lg-6">
+                            <h3 class="card-title h4">React-Bootstrap: a fusão entre o React e o Bootstrap</h3>
+                            <p class="card-text">Se você já trabalha com desenvolvimento web há alguns anos, provavelmente se...</p>
+                            <a href="/ArtigoReact.html" class="btn btn-primary">Continuar Leitura &rarr;</a>
+                        </div>
+
+                    </div>
+                </div>                
+                <div class="card-footer text-muted">
+                    Escrito em 19/02/2020 por <a href="#">Alex Diniz</a>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/fontawesome/js/all.js"></script>
+
+    <script src="js/search.js"></script>
+  </body>
+</html>
