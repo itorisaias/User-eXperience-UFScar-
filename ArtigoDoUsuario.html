@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta name="description" content="">
+      <meta name="author" content="">
+
+      <title>UX - Diretivas para Web</title>
+
+      <!-- Bootstrap core CSS -->
+      <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link href="vendor/fontawesome/css/all.css" rel="stylesheet">
+
+      <!-- Custom styles for this template -->
+      <link href="css/ux.css" rel="stylesheet">
+
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a href="#" class="navbar-brand"><span lang="en">UX</span> - Diretivas para Web</a>
+            <a href="#" class="navbar-brand"><span lang="en"> | </span></a>
+
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+               <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#"><span lang="en">Home</span></a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span lang="en">Backend</span></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown07">
+                            <a class="dropdown-item" href="#">Java</a>
+                            <a class="dropdown-item" href="#"><span lang="en">NodeJs</span></a>
+                            <a class="dropdown-item" href="#"><span lang="en">Phyton</span></a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span lang="en">Frontend</span></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown07">
+                            <a class="dropdown-item" href="#"><span lang="en">React</span></a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span lang="en">DevOps</span></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown07">
+                            <a class="dropdown-item" href="#"><span lang="en">Docker</span></a>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="dropdown07" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span lang="en">Database</span></a>
+                        <div class="dropdown-menu" aria-labelledby="dropdown07">
+                            <a class="dropdown-item" href="#"><span lang="en">MongoDB</span></a>
+                            <a class="dropdown-item" href="#"><span lang="en">PostgreSQL</span></a>
+                        </div>
+                    </li>
+                </ul>              
+
+                <ul class="navbar-nav ml-auto nav-flex-icons">                    
+                    <li  class="nav-item">
+                        <form class="form-inline ml-auto">
+                            <input type="text" class="form-control mr-sm-2" placeholder="Pesquisar">
+                        </form>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink-333" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-user"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right dropdown-default" aria-labelledby="navbarDropdownMenuLink-333">
+                            <a class="dropdown-item" href="#">Entrar</a>
+                            <a class="dropdown-item" href="#">Cadastre-se</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Page Content -->
+        <div class="container">
+
+        <!-- Page Heading/Breadcrumbs -->
+    <h1 class="mt-4 mb-3">
+          
+    </h1>
+
+    <ol class="breadcrumb">
+        <li class="breadcrumb-item">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="breadcrumb-item active">Novo Artigo</li>
+      </ol>
+
+      <div class="row">
+        
+            
+            
+           
+          </div>
+          <!-- /.row -->
+      
+          <!-- Contact Form -->
+          <!-- In order to set the email address and subject line for the contact form go to the bin/contact_me.php file. -->
+          <div class="row">
+            <div class="col-lg-8 mb-4">
+              <h3>Escreva o seu artigo que nós cuidamos do resto!</h3>
+              <form name="sentMessage" id="contactForm" novalidate>
+                <div class="control-group form-group">
+                  <div class="controls">
+                    <label>Título:</label>
+                    <input type="text" class="form-control" id="name" required data-validation-required-message="Please enter your name.">
+                    <p class="help-block"></p>
+                  </div>
+                </div>
+                <div class="input-group mb-3">
+                   
+                    <div class="custom-file">
+                      <input type="file" class="custom-file-input" id="inputGroupFile01">
+                      <label class="custom-file-label" for="inputGroupFile01">Escolha uma imagem Legal, ela vai ser a capa do seu artigo!</label>
+                    </div>
+                  </div>
+                <div class="form-group">
+                    <label for="exampleFormControlSelect2">Categoria</label>
+                    <select multiple class="form-control" id="exampleFormControlSelect2">
+                      <option>Backend</option>
+                      <option>Frontend</option>
+                      <option>DevOps</option>
+                      <option>Banco de Dados</option>
+                      <option>Outro</option>
+                    </select>
+                  </div>                
+                
+                <div class="control-group form-group">
+                  <div class="controls">
+                    <label>Conteúdo:</label>
+                    <textarea rows="10" cols="100" class="form-control" id="message" required data-validation-required-message="Please enter your message" maxlength="999" style="resize:none"></textarea>
+                  </div>
+                </div>
+                <div id="success"></div>
+                <!-- For success/fail messages -->
+                <button type="submit" class="btn btn-primary" id="sendMessageButton">Submeter Artigo</button>
+              </form>
+            </div>
+  
+      </div>
+      <!-- /.row -->       
+
+        </div>
+
+
+        <footer class="page-footer font-small text-light pt-4 bg-dark">
+            <div class="container text-center text-md-left">
+                <div class="row text-center text-md-left mt-3 pb-3">
+                    <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold"> <span lang="en">UX</span> - Diretivas para Web </h6>
+                        <p>Esta é uma plataforma agregadora de conteúdo ligando profissionais experientes a iniciantes</p>
+                    </div>
+
+                    <hr class="w-100 clearfix d-md-none">
+
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold"></h6>
+                        <p><a href="#">Backend</a></p>
+                        <p><a href="#">Frontend</a></p>
+                        <p><a href="#">DevOps</a></p>
+                        <p><a href="#">Database</a></p>
+                    </div>
+
+                    <hr class="w-100 clearfix d-md-none">
+
+                    <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold"></h6>
+                        <p><a href="#">Cadastre-se</a></p>
+                    </div>
+
+                    <hr class="w-100 clearfix d-md-none">
+
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                        <h6 class="text-uppercase mb-4 font-weight-bold">Contato</h6>
+                        <p><i class="fas fa-home mr-3"></i>R. ABC, São Carlos</p>
+                        <p><i class="fas fa-envelope mr-3"></i> contato@dominio.com</p>
+                        <p><i class="fas fa-phone mr-3"></i> (99) 9999-9999</p>
+                        <p></p>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="row d-flex align-items-center">
+                    <div class="col-md-7 col-lg-8">
+                        <p class="text-center text-md-left">© 2020 <span lang="en">Copyright</span>: <a href="#"><strong> <span lang="en">UX</span> - Diretivas para Web</strong></a></p>
+                    </div>
+                   
+                    <div class="col-md-5 col-lg-4 ml-lg-0">                    
+                        <div class="text-center text-md-right">
+                            <ul class="list-unstyled list-inline">
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fab fa-facebook-f"></i>
+                                    </a>
+                                </li>
+
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fab fa-twitter"></i>
+                                    </a>
+                                </li>
+
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fab fa-google-plus-g"></i>
+                                    </a>
+                                </li>
+
+                                <li class="list-inline-item">
+                                    <a class="btn-floating btn-sm rgba-white-slight mx-1">
+                                        <i class="fab fa-linkedin-in"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap core JavaScript -->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="vendor/fontawesome/js/all.js"></script>
+
+    </body>
+
+</html>
