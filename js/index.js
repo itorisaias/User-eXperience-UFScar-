@@ -4,6 +4,22 @@
   $(document).ready(() => {
     loadComponent();
     setUserAuthenticationStatus();
+
+    const unauthenticatedElements = $(".unauthenticated");
+    const authenticatedElements = $(".authenticated");
+
+    isAuthenticated()
+      .then(() => {
+        console.log("Usuário está autenticado.");
+
+        authenticatedElements.removeClass("d-none");
+        unauthenticatedElements.remove();
+      })
+      .catch(() => {
+        console.log("Usuário não está autenticado.");
+
+        authenticatedElements.remove();
+      });
   });
 
   function getQueryParam(param) {
