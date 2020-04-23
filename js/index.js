@@ -42,7 +42,7 @@
       location.search = "";
     } else if (authenticated === "false") {
       localStorage.removeItem("user");
-      location.href = "/index.html";
+      location.href = "index.html";
     }
   }
 
